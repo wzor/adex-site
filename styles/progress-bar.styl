@@ -1,0 +1,39 @@
+$pr-bar-outer-color = #dbdbdb
+$pr-bar-inner-color = #14dc9c
+.progress-outer
+	height 10px
+	width 100%
+	position relative
+	background-color $pr-bar-outer-color
+	margin-bottom 15px
+	text-align left
+	&:before
+		background-color $pr-bar-inner-color	
+		content ''
+		position absolute
+		width 20px
+		height 20px
+		transform rotate(45deg)
+		top -5px
+		right 0px
+	&.full
+		&:before
+			background-color $pr-bar-inner-color			
+	.progress-inner
+		height 100%
+		width 0
+		background-color $pr-bar-inner-color
+		transition all 1s ease-in-out
+
+#token-sale-progress
+	max-width 425px
+	margin-bottom 40px
+	h3, h4
+		margin-bottom 5px
+	h4
+		opacity 0.6
+	.hl 
+		color $pr-bar-inner-color
+	.info
+		font-size 0.9em
+		color #000

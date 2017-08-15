@@ -1,0 +1,14 @@
+section#partners.bg-light.text-center
+  .pure-g.container
+    .pure-u-1
+      .grid-item
+        .pure-g.heading
+          .pure-u-1
+            h2= __(strings.PARTNERS)
+
+        each partner in partners.partners
+          .pure-u-1.pure-u-sm-1.pure-u-md-12-24.pure-u-lg-12-24.pure-u-xl-6-24.text-left
+            .partner
+              .partner-logo
+                img(src=partner.img)
+              span= __(partner.description) 

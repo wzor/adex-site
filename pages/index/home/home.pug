@@ -1,0 +1,61 @@
+section#head.bg-lighter
+  .container
+    img.adex-logo-small(src='/adex/adex-logo-clean.png')
+    img.adex-logo-small-txt(src='/adex/adex-logo-txt.png')
+    h1.heading= __(strings.HEADING)
+    h1.heading= page || 'hoi'
+    nav
+      ul.textht-left
+        li
+          a(href=tokensaleLink)= __(strings.NAV_TOKENSALE)
+
+        li
+          a(href=whitepaperAddress, target="_blank")= __(strings.NAV_WHITEPAPER)
+          
+        li
+          a(href='https://medium.com/the-adex-blog', target="_blank")= __(strings.NAV_BLOG)
+
+        include ./../../../layout/langs
+section#hero.bg-lighter-default
+  include ./hero  
+
+
+section#about
+  .pure-g.bg-default-lighter
+    .pure-u-1
+      .pure-g.container
+        .pure-u-lg-1-2.bg-default.pure-u-md-1.pure-u-1
+          .grid-item
+            .heading
+              h2= __(strings.WHAT_IS_ADEX)
+            p!= __(strings.WHAT_IS_ADEX_LANDING_P1)
+            p!= __(strings.WHAT_IS_ADEX_LANDING_P2)
+            p!= __(strings.WHAT_IS_ADEX_LANDING_P3)
+        .pure-u-lg-1-2.bg-lighter.pure-u-md-1.pure-u-1
+          .grid-item.feature-grid
+            .heading.feature-heading
+              h2= __(strings.FEATURES)
+            .feature-holder
+              .feature-tabs
+                  .icon.icon-adex-clear
+                  span!= __(strings.FEATURES_CLEAR)
+              .feature-tabs
+                  .icon.icon-adex-available
+                  span!= __(strings.FEATURES_AVAILABLE)
+              .featured-space
+              .feature-tabs
+                  .icon.icon-smaller.icon-adex-anonymous
+                  span!= __(strings.FEATURES_ANONYMOUS)
+              .feature-tabs
+                  .icon.icon-smaller.icon-adex-regulated
+                  span!= __(strings.FEATURES_REGULATED)
+              .featured-space-end
+
+            
+include ./../partners
+
+include ./../team
+
+include ./../seenon
+
+include ./../contacts

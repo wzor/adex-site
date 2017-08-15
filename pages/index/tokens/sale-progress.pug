@@ -1,0 +1,22 @@
+#token-sale-progress
+  h4
+    strong= __(strings.TOKEN_SALE_PROGRESS)
+  .progress-outer
+    .progress-inner
+
+  .info.clearfix
+    .left
+      div.hl
+        strong= __(strings.TOKEN_SALE_PROGRESS_CURRENT)
+      div
+        strong= __(strings.TOKEN_SALE_PROGRESS_CURRENT_SOLD) + ' '
+        strong.raised= stats.raised
+    .right.clearfix 
+      div
+        strong= __(strings.TOKEN_SALE_PROGRESS_CAP) + ' '
+        strong.cap= stats.cap + ' '
+        strong= __(strings.TOKEN_SALE_PROGRESS_ETH)
+      div 
+        strong 1 ETH = 
+        strong.ratio= stats.ratio
+        strong &nbsp;ADX 

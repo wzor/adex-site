@@ -1,0 +1,530 @@
+{
+    "HERO_TOKEN_SALE": {
+        "en": "TOKEN SALE",
+        "cn": "TOKEN SALE",
+        "ru": "распродажа токенов"
+    },
+     "HERO_TOKEN_SALE_STARTS_ON": {
+        "en": "<span>ADX CREATION EVENT </sapan> <span class='sm'> STARTS ON</sapan>",
+        "cn": "众筹开始于",
+        "ru": ""
+    },
+    "HERO_TOKEN_SALE_START_DATE": {
+        "en": "FRI 30th JUNE, 11:00 AM (GMT)",
+        "cn": "6月30日周五 19:00 （北京时间）",
+        "ru": ""
+    },
+    "HERO_TOKEN_SALE_ENDS_ON": {
+        "en": "<span>ADX CREATION EVENT </sapan> <span class='sm'> ENDS ON</sapan>",
+        "cn": "",
+        "ru": ""
+    },
+    "HERO_TOKEN_SALE_END_DATE": {
+        "en": "SUN 30th JULY, 11:00 AM (GMT)",
+        "cn": "",
+        "ru": "В пятницу, 30 ИЮНЯ, 11:00 (Гринвич)"
+    },
+    "HERO_TOKEN_SALE_ENDED": {
+        "en": "ADX CREATION EVENT ENDED!",
+        "cn": "",
+        "ru": ""
+    },
+    "HERO_TOKEN_SALE_ENDED_THANKS": {
+        "en": "Thank you for participating!",
+        "cn": "",
+        "ru": ""
+    },
+    "HERO_TOKEN_SALE_ENDED_FOLLOW": {
+        "en": "follow us:",
+        "cn": "",
+        "ru": ""
+    },
+    "TOKEN_SALE_CITY_SIN": {
+        "en": "SIN, SHANGHAI",
+        "cn": "新加坡、上海",
+        "ru": ""
+    },
+    "TOKEN_SALE_TIME_SIN": {
+        "en": "7 PM",
+        "cn": "7 PM",
+        "ru": ""
+    },
+    "TOKEN_SALE_CITY_NY": {
+        "en": "NEW YORK",
+        "cn": "纽约",
+        "ru": ""
+    },
+    "TOKEN_SALE_TIME_NY": {
+        "en": "6 AM",
+        "cn": "6 AM",
+        "ru": ""
+    },
+    "TOKEN_SALE_CITY_LND": {
+        "en": "LONDON",
+        "cn": "伦敦",
+        "ru": ""
+    },
+    "TOKEN_SALE_TIME_LND": {
+        "en": "11 AM",
+        "cn": "11 AM",
+        "ru": ""
+    },
+    "TOKEN_SALE_CITY_MUN": {
+        "en": "MUNICH",
+        "cn": "慕尼黑",
+        "ru": ""
+    },
+    "TOKEN_SALE_TIME_MUN": {
+        "en": "12 PM",
+        "cn": "12 PM",
+        "ru": ""
+    },
+    "DAYS": {
+        "en": "days",
+        "cn": "日",
+        "ru": ""
+    },
+    "HOURS": {
+        "en": "hours",
+        "cn": "时",
+        "ru": ""
+    }
+    ,
+    "MINUTES": {
+        "en": "minutes",
+        "cn": "分",
+        "ru": ""
+    }
+    ,
+    "SECONDS": {
+        "en": "seconds",
+        "cn": "秒",
+        "ru": ""
+    }
+    ,
+    "ETHEREUM_ADDRESS": {
+        "en": "ethereum mainnet address",
+        "cn": "",
+        "ru": ""
+    }
+    ,
+    "TESTIFY": {
+        "en": "By participating in this contribution campaign, you testify that you have read and accept the",
+        "cn": "",
+        "ru": ""
+    },
+    "TOS": {
+        "en": "Terms and Conditions (ADX Creation and AdEx Project Creation)",
+        "cn": "",
+        "ru": ""
+    },
+    "MYETH_GUIDE": {
+        "en": "myetherwallet - guide",
+        "cn": "",
+        "ru": ""
+    },
+    "MIST_GUIDE": {
+        "en": "Mist wallet - guide",
+        "cn": ""
+    },
+    "GET_NOTIFIED": {
+        "en": "Get notified for updates:",
+        "cn": "获取最新动态：",
+        "ru": ""
+    },
+    "COMMING_SOON": {
+        "en": " [Coming soon]",
+        "cn": "",
+        "ru": ""
+    },
+    "ADEX_TITLE": {
+        "en": "AdEx - Decentralized ad network",
+        "cn": "",
+        "ru": ""
+    },
+    "ADEX_META_DESC": {
+        "en": "AdEx is a decentralized ad serving network based on blockchain and smart contracts technology.",
+        "cn": "",
+        "ru": ""
+    },
+    "ADEX_META_KEY_WORDS": {
+        "en": "blockchain, decentralized ad network, adex, advertising exchange, ad exchange, ethereum, cryptocurrency, smart contract, smart contracts, ico, initial coin offering, token sale, crypto token, crypto tokens",
+        "cn": "",
+        "ru": ""
+    },
+    "ADEX_META_AUTHOR": {
+        "en": "AdEx",
+        "cn": "AdEx",
+        "ru": ""
+    },
+    "ADEX_META_TITLE": {
+        "en": "AdEx - Decentralized ad network!",
+        "cn": "",
+        "ru": ""
+    },
+    "ADEX_META_DESC_2": {
+        "en": "AdEx is a decentralized ad serving network based on blockchain and smart contracts technology.",
+        "cn": "",
+        "ru": ""
+    },
+    "ADEX_META_TYPE": {
+        "en": "product",
+        "cn": "product",
+        "ru": ""
+    },
+    "HEADING": {
+        "en": "A Decentralized Ad Exchange",
+        "cn": "去中心化的广告网络",
+        "ru": "Децентрализованная биржа рекламы"
+    },
+    "NAV_WHITEPAPER": {
+        "en": "WHITEPAPER",
+        "cn": "白皮书",
+        "ru": ""
+    },
+    "NAV_BLOG": {
+        "en": "BLOG",
+        "cn": "博客",
+        "ru": "блог"
+    },
+    "NAV_TOKENSALE": {
+        "en": "TOKEN SALE",
+        "cn": "代币众筹",
+        "ru": "распродажа токенов"
+    },
+    "NAV_EN": {
+        "en": "EN",
+        "cn": "",
+        "ru": ""
+    },
+    "NAV_CN": {
+        "en": "CN",
+        "cn": "",
+        "ru": ""
+    },
+    "NAV_LANG": {
+        "en": "EN",
+        "cn": "CN",
+        "ru": "RU"
+    },
+    "WHAT_IS_ADEX": {
+        "en": "What is AdEx",
+        "cn": "AdEx是什么？",
+        "ru": "Что такое AdEx"
+    },
+    "WHAT_IS_ADEX_P1": {
+        "en": "AdEx is an <strong> ad serving network </strong> aiming at disrupting the existing online advertising landscape and address its significant problems: advertising fraud, privacy and consent to receiving sponsored messages, etc.",
+        "cn": "AdEx是一个基于区块链的广告交易平台，旨在革新现有的在线广告格局，解决其一些重大问题：广告欺诈、隐私和恶意展示赞助信息等。",
+        "ru": "AdEx это <strong> рекламная сеть</strong>, стремящаяся полностью поменять существующий бизнес-ландшафт онлайн-рекламы и решить его главные проблемы: рекламное мошенничество, вопросы приватности и пользовательского согласия на получение рекламных сообщений, и т.д."
+    },
+    "WHAT_IS_ADEX_P2": {
+        "en": "<span></span>",
+        "cn": "AdEx是完全公开透明并构建在以太坊智能合约之上的。",
+        "ru": ""
+    },
+    "WHAT_IS_ADEX_P3": {
+        "en": "We believe we can empower advertisers and publishers with a platform that is <strong> secure, transparent and beneficial </strong> for all the parties involved in the process, consumers included.",
+        "cn": "我们相信，我们可以提供一个平台来授权广告客户和发布商，在该平台上不仅安全、透明而且有利于包括消费者在内的参与流程的各方。",
+        "ru": "Мы уверены, что сможем создать для рекламодателей и вебмастеров платформу, которая будет <strong>безопасной, прозрачной и выгодной</strong> для всех сторон, вовлеченных в рекламу, в том числе и пользователей."
+    },
+    "HOW_IT_WORKS": {
+        "en": "How It works",
+        "cn": "",
+        "ru": "Как это устроено"
+    },
+    "HOW_IT_WORKS_P1": {
+        "en": "The AdEx Network has several layers: the first one is the ad exchange, which is built on Ethereum smart contracts with a few solutions for a quicker layer on top of that (or side-by-side) being experimented upon. The ad exchange is built in a way to facilitate the entire relationship between publishers, advertisers and end users, therefore replacing the usual network of multiple exchanges, SSPs and DSPs and all the complexity, inaccurancy and inefficiency that comes with it.",
+        "cn": "",
+        "ru": "У AdEx Network несколько уровней: на первом она рекламная биржа, работающая на смарт-контрактах Ethereum. Команда проводит эксперименты с некоторыми дополнениями на более высоком уровне или параллельно с основной сетью для ускорения ее работы. Сама биржа построена так, чтобы упростить все отношения между вебмастерами, рекламодателями и конечными пользователями, и таким образом заменяет обычную сеть из нескольких бирж, SSP и DSP, а также устраняет все сложности, неточности и неэффективность, которые с этим связаны."
+    },
+    "HOW_IT_WORKS_P2": {
+        "en": "On top of the exchange, we are building dapps for the publisher portal, advertiser portal and the AdEx profile (for end users). Dapps are distributed applications that connect to the Ethereum blockchain and interact with it, but typically with a user-friendly user interface. All of those dapps will be browser-based and easily accessible online, hosted by AdEx - but since they're interacting with the blockchain directly, anyone can run their own instance of those dapps if they want to.",
+        "cn": "",
+        "ru": "Поверх биржи мы строим распределенные приложения для портала вебмастера, рекламодателя и профиля AdEx (для конечных пользователей). Распределенные приложения связаны с сетью Ethereum и взаимодействуют с ней, но имеют более дружественный пользователю интерфейс. Все эти приложения будут браузерными и легко доступными онлайн. Они будут хоститься AdEx, однако благодаря прямому взаимодействию с блокчейном при желании каждый сможет запустить свое собственное распределенное приложение."
+    },
+    "TOKEN_FEATURES": {
+        "en": "Features",
+        "cn": "特   点",
+        "ru": "Особенности"
+    },
+    "FEATURES": {
+        "en": "Features",
+        "cn": "特   点",
+        "ru": "Особенности"
+    },
+    "FEATURES_CLEAR": {
+        "en": "Crystal-clear<br/>detailed reporting",
+        "cn": "清晰详细的报告",
+        "ru": "Понятная и <br/>подробная отчетность"
+    },
+    "FEATURES_AVAILABLE": {
+        "en": "Available<br/>for all browsers",
+        "cn": "适用于所有浏览器",
+        "ru": "Поддержка всех браузеров"
+    },
+    "FEATURES_ANONYMOUS": {
+        "en": "Focused on<br/>user privacy",
+        "cn": "专注于用户隐私",
+        "ru": "Особое внимание к<br/>конфиденциальности"
+    },
+    "FEATURES_REGULATED": {
+        "en": "Regulated by<br/>the end users",
+        "cn": "由终端用户监管",
+        "ru": "Управляется <br/>конечным пользователем"
+    },
+    "TOKE_SALE_TERMS": {
+        "en": "ADX Creation Event Terms",
+        "cn": "",
+        "ru": ""
+    },
+    "TOKE_DISTRIB": {
+        "en": "Token Distribution",
+        "cn": "",
+        "ru": ""
+    },
+    "TOKE_SALE_TERMS_1_N": {
+        "en": "80%",
+        "cn": "",
+        "ru": ""
+    },
+    "TOKE_SALE_TERMS_1_P": {
+        "en": "are allocated for purchase by the public over time",
+        "cn": "",
+        "ru": "будут распределены между инвесторами во время предстоящего краудсейла"
+    },
+    "TOKE_SALE_TERMS_2_N": {
+        "en": "10%",
+        "cn": "",
+        "ru": ""
+    },
+    "TOKE_SALE_TERMS_2_P": {
+        "en": "will go to the AdEx Team and will be locked for 12 months",
+        "cn": "",
+        "ru": "зарезервированы для команды AdEx, и будут заблокированы на 12 месяцев"
+    },
+    "TOKE_SALE_TERMS_3_N": {
+        "en": "6%",
+        "cn": "",
+        "ru": ""
+    },
+    "TOKE_SALE_TERMS_3_P": {
+        "en": "will go to the AdEx advisors and will be locked for 12 months",
+        "cn": "",
+        "ru": "зарезервированы для консультантов AdEx и будут заблокированы на 12 месяцев"
+    },
+    "TOKE_SALE_TERMS_4_N": {
+        "en": "2%",
+        "cn": "",
+        "ru": ""
+    },
+    "TOKE_SALE_TERMS_4_P": {
+        "en": "will go to WINGS DAO - discovery, valuation, social promotion",
+        "cn": "",
+        "ru": "зарезервировано для WINGS DAO (открытие, оценка, продвижение)"
+    },
+    "TOKE_SALE_TERMS_5_N": {
+        "en": "2%",
+        "cn": "",
+        "ru": ""
+    },
+    "TOKE_SALE_TERMS_5_P": {
+        "en": "will be set aside for a bounty program",
+        "cn": "",
+        "ru": "будут отложены для целей баунти-программы"
+    },
+    "TOKE_SALE_TERMS_CLARIF": {
+        "en": "Because of the 40,000 ETH hard cap, not all of the 80% tokens are going to be sold in this contribution campaign. The rest will be kept in an AdEx fund address, vested for 24 months with a 6 months cliff, and used within the AdEx dapps themselves to provide easy means of purchasing ADX for easy onboarding of new advertisers.",
+        "cn": "",
+        "ru": ""
+    },
+    "KEY_DATES": {
+        "en": "Key Dates",
+        "cn": "",
+        "ru": "Ключевые даты"
+    },
+    "KEY_DATES_1_D": {
+        "en": "12 Dec",
+        "cn": "",
+        "ru": "2 дек"
+    },
+    "KEY_DATES_1_P": {
+        "en": "AdEx first announced",
+        "cn": "",
+        "ru": "Впервые анонсирован AdEx"
+    },
+    "KEY_DATES_2_D": {
+        "en": "Jun 30",
+        "cn": "",
+        "ru": "30 июня"
+    },
+    "KEY_DATES_2_P": {
+        "en": "ADX creation event starts",
+        "cn": "",
+        "ru": "Начало распродажи токенов"
+    },
+    "KEY_DATES_3_D": {
+        "en": "July 30",
+        "cn": "",
+        "ru": "30 июля"
+    },
+    "KEY_DATES_3_P": {
+        "en": "ADX creation event ends",
+        "cn": "",
+        "ru": "Окончание распродажи токенов"
+    },
+    "KEY_DATES_4_D": {
+        "en": "Jan 30 2018",
+        "cn": "",
+        "ru": "30 января 2018"
+    },
+    "KEY_DATES_4_P": {
+        "en": "Beta released",
+        "cn": "",
+        "ru": "Бета-релиз"
+    },
+    "PARTNERS": {
+        "en": "Partners",
+        "cn": "合作伙伴",
+        "ru": "Партнеры"
+    },
+    "TEAM": {
+        "en": "Team",
+        "cn": "团队成员",
+        "ru": "Команда"
+    },
+    "TEAM_P1": {
+        "en": "From the creators of <strong>Stremio</strong> with a solid team, backed<br/>and advised by <strong>Wings</strong> and <strong>Bitmain Tech</strong>.",
+        "cn": "由<strong>Stremio</strong> 的创始人组成，由<strong>Wings</strong>和<strong>Bitmain Tech</strong>提供支持和建议。",
+        "ru": "От создателей Stremio и надежной команды, при поддержке Wings и Bitmain Tech"
+    },
+    "AS_SEEN_ON": {
+        "en": "As Seen On",
+        "cn": "新闻报道",
+        "ru": "О нас пишут"
+    },
+    "CONTACT_US": {
+        "en": "Contact us",
+        "cn": "联系我们",
+        "ru": "Напишите нам"
+    },
+    "CONTACT_US_LEGEND": {
+        "en": "For press and other inquiries, please contact us via the form below.",
+        "cn": "有关新闻或其他查询，请填写以下表单与我们联系。",
+        "ru": "Если у вас есть вопросы или вы представляете прессу, вы можете связаться с нами через эту форму"
+    },
+    "CONTACT_US_PH_NAMES": {
+        "en": "Names",
+        "cn": "姓名",
+        "ru": ""
+    },
+    "CONTACT_US_PH_EMAIL": {
+        "en": "Email",
+        "cn": "邮箱地址",
+        "ru": ""
+    },
+    "CONTACT_US_PH_MESSAGE": {
+        "en": "Message",
+        "cn": "内容",
+        "ru": ""
+    },
+    "CONTACT_US_BY_EMAIL": {
+        "en": "For press and other inquiries, please contact at: ",
+        "cn": "",
+        "ru": ""
+    },
+    "GET_IN_TOUCH": {
+        "en": "Get in touch",
+        "cn": "与我们保持联系",
+        "ru": "Будем на связи"
+    },
+    "TOKEN_SALE_PROGRESS": {
+        "en": "EVENT PROGRESS",
+        "cn": "",
+        "ru": ""
+    },
+    "TOKEN_SALE_PROGRESS_CURRENT": {
+        "en": "Current status",
+        "cn": "",
+        "ru": ""
+    },
+    "TOKEN_SALE_PROGRESS_CURRENT_SOLD": {
+        "en": "ETH RAISED",
+        "cn": "",
+        "ru": ""
+    },
+    "TOKEN_SALE_PROGRESS_CAP": {
+        "en": "Cap",
+        "cn": "",
+        "ru": ""
+    },
+    "TOKEN_SALE_PROGRESS_ETH": {
+        "en": "ETH",
+        "cn": "",
+        "ru": ""
+    },
+    "WHAT_IS_ADEX_LANDING_P1": {
+        "en": "AdEx is a blockchain-based <strong>ad exchange</strong> aiming at disrupting the existing online advertising landscape and address its significant problems: advertising fraud, privacy and consent to receiving sponsored messages, etc.",
+        "cn": "AdEx是一个基于区块链的广告交易平台，旨在革新现有的在线广告格局，解决其一些重大问题：广告欺诈、隐私和恶意展示赞助信息等。",
+        "ru": "AdEx - это основанная на блокчейне <strong>биржа рекламы</strong>, стремящаяся полностью поменять существующий бизнес-ландшафт онлайн-рекламы и решить его главные проблемы: рекламное мошенничество, вопросы приватности и пользовательского согласия на получение рекламных сообщений, и т.д."
+    },
+    "WHAT_IS_ADEX_LANDING_P2": {
+        "en": "AdEx is completely transparent and built on top of Ethereum smart contracts.",
+        "cn": "AdEx是完全公开透明并构建在以太坊智能合约之上的。",
+        "ru": "AdEx полностью прозрачна и работает на смарт-контрактах Ethereum."
+    },
+    "WHAT_IS_ADEX_LANDING_P3": {
+        "en": "We believe we can empower advertisers and publishers with a platform that is <strong>secure, transparent and beneficial</strong>  for all the parties involved in the process, consumers included.",
+        "cn": "我们相信，我们可以提供一个平台来授权广告客户和发布商，在该平台上不仅安全、透明而且有利于包括消费者在内的参与流程的各方。",
+        "ru": "Мы уверены, что сможем создать для рекламодателей и вебмастеров платформу, которая будет безопасной, прозрачной и выгодной для всех сторон, вовлеченных в процесс, в том числе и пользователей. "
+    },
+    "CONTACT_US_PH_MESSAGE_BTN": {
+        "en": "SEND",
+        "cn": "发送",
+        "ru": ""
+    },
+    "GET_NOTIFIED_PH": {
+        "en": "Email",
+        "cn": "邮箱地址",
+        "ru": ""
+    },
+    "GET_NOTIFIED_BTN": {
+        "en": "SIGN UP",
+        "cn": "注  册",
+        "ru": ""
+    },
+    "ACCEPT_TOS": {
+        "en": "I have read and accept the ",
+        "cn": "",
+        "ru": ""
+    },
+    "IM_NOT_US": {
+        "en": "I am not a US citizen",
+        "cn": "",
+        "ru": ""
+    },
+    "ACCEPT_TO_SHOW_ET_ADR": {
+        "en": "Accept terms to show address:",
+        "cn": "",
+        "ru": ""
+    },
+    "I_HAVE_READ_WP": {
+        "en": "I have read the ",
+        "cn": "",
+        "ru": ""
+    },
+    "WHITEPAPER": {
+        "en": " Whitepaper",
+        "cn": "",
+        "ru": ""
+    },
+    "CROWDSALE_GUIDE_LINK": {
+        "en": "How to participate (MyEtherWallet & Parity)",
+        "cn": "",
+        "ru": ""
+    },
+    "": {
+        "en": "",
+        "cn": "",
+        "ru": ""
+    }
+}

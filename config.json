@@ -1,0 +1,19 @@
+{
+	"domain": "adex.network",
+	"title": "AdEx - Decentralized ad network",
+	"static": ["public", "images", "adex"],
+	"styles": ["pure-grid","basic", "progress-bar", "timeline"],
+	"scripts": ["language", "jquery-3.2.1"],
+	"fonts": ["Open+Sans:300,400,600&subset=cyrillic-ext,latin-ext"],
+	"icons": [],
+	"languages": [
+		"en", "ru", "cn"
+	],
+	"manifest": {},
+	"redirect": {},
+	"headers": {},
+	"ports": {
+		"http": 4000,
+		"https": 4001
+	}
+}

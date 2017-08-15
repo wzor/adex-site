@@ -1,0 +1,20 @@
+{
+  "name": "adex-website",
+  "version": "1.0.0",
+  "description": "AdEx Network website",
+  "keywords": [],
+  "homepage": "",
+  "repository": "",
+  "license": "",
+  "scripts": { "start": "node index.js" },
+  "engines": {
+    "node": "6.11.1"
+  },
+  "dependencies": {
+    "aero": "git://github.com/IvoPaunov/aero.git#fdcae55f0321de00b61f008656c427a98fccb3a7",
+    "async": "^2.5.0",
+    "body-parser": "^1.17.2",
+    "cookie-session": "^2.0.0-beta.2",
+    "locale": "^0.1.0"
+  }
+}
