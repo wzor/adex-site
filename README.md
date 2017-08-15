@@ -1,4 +1,8 @@
 # README #
 
 # adex-webiste
-Website of AdEx
+Official Website of AdEx
+
+## Built With
+
+* [aerojs](https://github.com/aerojs/aero) - The web framework used
