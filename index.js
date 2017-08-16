@@ -25,6 +25,10 @@ app.use((request, response, next) => {
 })
 
 app.use((request, response, next) => {
+	request.globals = globalJSON
+	request.globals.gurl = url.parse(request.url, true);
+	request.globals.nolangpath = request.globals.gurl.pathname;
+
 	const supportedLanguages = new locale.Locales(app.config.languages)
 
 	if(!request.session.language) {		
@@ -32,8 +36,14 @@ app.use((request, response, next) => {
 		request.session.language = acceptLocales.best(supportedLanguages).toString().substring(0, 2)
 	}
 
-	
-	request.globals = globalJSON
+	// Temp
+	let langRegex = new RegExp('\\/(' + app.config.languages.join('|') + ')$')
+	let langMatch = langRegex.exec(request.globals.gurl.pathname)
+	if(langMatch && langMatch[1]) {
+		request.session.language = langMatch[1];
+		request.globals.nolangpath = request.globals.nolangpath.replace(langMatch[0], '')
+	}
+
 	request.globals.languages = supportedLanguages
 	request.globals.version = require('./package.json').version
 
@@ -51,8 +61,6 @@ app.use((request, response, next) => {
 		return translation
 	}
 
-	request.globals.url = url.parse(request.url, true);
-
 	request.globals.strings = require('./data/strings.json')
 
 	next()
@@ -61,10 +69,10 @@ app.use((request, response, next) => {
 app.use((request, response, next) => {
 	var lang = request.session.language || 'en';
 
-	request.globals.whitepaperAddress = (lang === "cn" ? "/adex/AdEx-Whitepaper-v1.4%20-Cici-cleanV2.pdf" :"/adex/AdEx-Whitepaper-v.7.pdf")
+	request.globals.whitepaperAddress = (lang === "cn" ? "/adex/AdEx-Whitepaper-v1.4%20-Cici-cleanV2.pdf" : "/adex/AdEx-Whitepaper-v.7.pdf")
 	request.globals.guideAddress = ("/adex/AdEx-Crowdsale-V2.pdf")
 	request.globals.tosAddress = ("/adex/AdEx-Terms-and-Conditions-v.2.2.pdf")
-	request.globals.tokensaleLink = ("/tokens" + (request.globals.url.path || "/"))
+	request.globals.tokensaleLink = ("/tokens" + (request.globals.gurl.path || "/"))
 
 	next()
 })
