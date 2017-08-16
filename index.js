@@ -5,6 +5,13 @@ const locale = require('locale')
 const bodyParser = require('body-parser')
 const url = require('url')
 
+app.use((request, response, next) => {
+	var hours = url.parse(request.url).pathname.match(/jpg$|png|mp4$/) ? 24*24 : 12;
+	response.setHeader("Cache-Control", "public, max-age="+(hours*60*60));
+	response.setHeader("Expires", new Date(Date.now() + (hours*60*60*1000)).toUTCString());
+	next();
+});
+
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }));
 
