@@ -3,5 +3,5 @@
 each lng, index in languages
     li.lang(class=!first++ ? 'first': '')
         //- a(href=`javascript:window.changeLanguage('${lng}');`)= lng
-        a(href= nolangpath.replace(/\/$/, "") + '/' + lng + gurl.search)= lng
+        a(href= nolangpath.replace(/\/$/, "") + '/' + lng + gurl.search, class= language == lng ? 'selected' : '')= lng
             

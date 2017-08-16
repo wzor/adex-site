@@ -45,6 +45,7 @@ app.use((request, response, next) => {
 	}
 
 	request.globals.languages = supportedLanguages
+	request.globals.language = request.session.language
 	request.globals.version = require('./package.json').version
 
 	// Translate function
