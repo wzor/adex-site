@@ -1,12 +1,14 @@
 {
   "name": "adex-website",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "AdEx Network website",
   "keywords": [],
   "homepage": "",
   "repository": "",
   "license": "",
-  "scripts": { "start": "node index.js" },
+  "scripts": {
+    "start": "node index.js"
+  },
   "engines": {
     "node": "6.11.1"
   },
