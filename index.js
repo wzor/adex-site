@@ -70,9 +70,21 @@ app.use((request, response, next) => {
 })
 
 app.use((request, response, next) => {
-	var lang = request.globals.language || 'en';
+	let lang = request.globals.language || 'en'
+	let whitepaperAddress = '/adex/'
+	
+	switch (lang) {
+		case 'cn':
+			whitepaperAddress += "AdEx-Whitepaper-v1.4%20-Cici-cleanV2.pdf"
+			break;
+		case 'ru':
+			whitepaperAddress += "AdEx-Whitepaper-v.5.ru.pdf"
+			break;
+		default:
+			whitepaperAddress += "AdEx-Whitepaper-v.7.pdf"
+	}
 
-	request.globals.whitepaperAddress = (lang === "cn" ? "/adex/AdEx-Whitepaper-v1.4%20-Cici-cleanV2.pdf" : "/adex/AdEx-Whitepaper-v.7.pdf")
+	request.globals.whitepaperAddress = whitepaperAddress
 	request.globals.guideAddress = ("/adex/AdEx-Crowdsale-V2.pdf")
 	request.globals.tosAddress = ("/adex/AdEx-Terms-and-Conditions-v.2.2.pdf")
 	request.globals.tokensaleLink = ("/tokens" + (request.globals.gurl.path || "/"))
