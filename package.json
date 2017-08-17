@@ -15,8 +15,10 @@
   "dependencies": {
     "aero": "git://github.com/IvoPaunov/aero.git#fdcae55f0321de00b61f008656c427a98fccb3a7",
     "async": "^2.5.0",
+    "bluebird": "^3.5.0",
     "body-parser": "^1.17.2",
     "cookie-session": "^2.0.0-beta.2",
-    "locale": "^0.1.0"
+    "locale": "^0.1.0",
+    "web3": "0.19.0"
   }
 }
