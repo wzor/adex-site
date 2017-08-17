@@ -29,9 +29,6 @@ function getTransferable(){
         var TOTAL = 100 * MIL * MULTIPLIER
         
         var tsSeconds = parseInt(Date.now()/1000)
-
-        console.log('tsSeconds', tsSeconds)
-        console.log('adxToken.balanceOf(adxTeam) ', adxToken.balanceOf)
         
         var nonTransferrable = 
             (adxToken.balanceOf(adxTeam) - adxToken.transferableTokens(adxTeam, tsSeconds)) 
@@ -40,8 +37,6 @@ function getTransferable(){
         var transferrable = TOTAL - nonTransferrable
         
         cachedTransferable = transferrable;
-
-        console.log('cachedTransferable', cachedTransferable)
 
         return resolve(transferrable);
     });
