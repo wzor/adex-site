@@ -2,8 +2,8 @@ var fs = require('fs')
 var Web3 = require('web3')
 var Promise = require('bluebird');
 
-var HTTP_PROVIDER = 'http://192.168.0.32:8181'
-// var HTTP_PROVIDER = 'https://mainnet.infura.io/W0a3PCAj1UfQZxo5AIrv'
+// var HTTP_PROVIDER = 'http://192.168.0.32:8181'
+var HTTP_PROVIDER = 'https://mainnet.infura.io/W0a3PCAj1UfQZxo5AIrv'
 
 var web3 = new Web3(new Web3.providers.HttpProvider(HTTP_PROVIDER))
 
