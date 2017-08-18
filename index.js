@@ -4,6 +4,7 @@ const globalJSON = require('./global.json')
 const locale = require('locale')
 const bodyParser = require('body-parser')
 const url = require('url')
+const langRegex = new RegExp('^\\/+(' + require('./config.json').languages.join('|') + ')\\/*')
 
 app.use((request, response, next) => {
 	var hours = url.parse(request.url).pathname.match(/jpg$|png|mp4$/) ? 24*24 : 12;
@@ -38,20 +39,7 @@ app.use((request, response, next) => {
 
 	const supportedLanguages = new locale.Locales(app.config.languages);
 	const acceptLocales = new locale.Locales(request.headers["accept-language"])
-	let language = acceptLocales.best(supportedLanguages).toString().substring(0, 2)
-
-	// if(!request.session.language) {		
-	// 	const acceptLocales = new locale.Locales(request.headers["accept-language"])
-	// 	request.session.language = acceptLocales.best(supportedLanguages).toString().substring(0, 2)
-	// }
-
-	// Temp
-	let langRegex = new RegExp('\\/(' + app.config.languages.join('|') + ')$')
-	let langMatch = langRegex.exec(request.globals.gurl.pathname)
-	if(langMatch && langMatch[1]) {
-		language = langMatch[1];
-		request.globals.nolangpath = request.globals.nolangpath.replace(langMatch[0], '')
-	}
+	let language =  request.language || acceptLocales.best(supportedLanguages).toString().substring(0, 2)
 
 	request.globals.languages = supportedLanguages
 	request.globals.language = language
@@ -97,6 +85,19 @@ app.use((request, response, next) => {
 	request.globals.tokensaleLink = ("/tokens" + (request.globals.gurl.path || "/"))
 
 	next()
+})
+
+app.rewrite((request, response) => {
+	var path = url.parse(request.url, true).path;
+	var language = null;
+
+	let langMatch = langRegex.exec(path)
+	if(langMatch && langMatch[1]) {
+		language = langMatch[1];
+		request.url = request.url.replace(langMatch[0], '/')
+	}
+
+	request.language = language;
 })
 
 require('./services/resources')
