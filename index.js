@@ -65,7 +65,7 @@ app.use((request, response, next) => {
 })
 
 app.use((request, response, next) => {
-	let lang = request.globals.language || 'en'
+	let lang = request.globals.language;
 	let whitepaperAddress = '/adex/'
 	
 	switch (lang) {
@@ -82,7 +82,7 @@ app.use((request, response, next) => {
 	request.globals.whitepaperAddress = whitepaperAddress
 	request.globals.guideAddress = ("/adex/AdEx-Crowdsale-V2.pdf")
 	request.globals.tosAddress = ("/adex/AdEx-Terms-and-Conditions-v.2.2.pdf")
-	request.globals.tokensaleLink = ("/tokens" + (request.globals.gurl.path || "/"))
+	request.globals.tokensaleLink = ((lang ? "/" + lang : "" ) + "/tokens" + (request.globals.gurl.path || "/"))
 
 	next()
 })
