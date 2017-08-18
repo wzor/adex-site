@@ -34,7 +34,7 @@ function getTransferable(){
             (adxToken.balanceOf(adxTeam) - adxToken.transferableTokens(adxTeam, tsSeconds)) 
             + (adxToken.balanceOf(adxFund) - adxToken.transferableTokens(adxFund, tsSeconds)) 
         
-        var transferrable = TOTAL - nonTransferrable
+        var transferrable = (TOTAL - nonTransferrable) / MULTIPLIER;
         
         cachedTransferable = transferrable;
 
