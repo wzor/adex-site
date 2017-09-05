@@ -1,3 +1,4 @@
+process.env.NODE_ENV='production'
 global.app = require('aero')()
 // const cookieSession = require('cookie-session')
 const globalJSON = require('./global.json')
@@ -5,7 +6,7 @@ const locale = require('locale')
 const bodyParser = require('body-parser')
 const url = require('url')
 const langRegex = new RegExp('^\\/+(' + require('./config.json').languages.join('|') + ')\\/*')
-process.env.NODE_ENV='production'
+
 
 app.use((request, response, next) => {
 	var hours = url.parse(request.url).pathname.match(/jpg$|png|mp4$/) ? 24*24 : 12;
