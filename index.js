@@ -45,6 +45,8 @@ app.use((request, response, next) => {
 	request.globals.language = language
 	request.globals.version = require('./package.json').version
 
+	console.log('process.env.NODE_ENV', process.env.NODE_ENV)
+
 	// Translate function
 	request.globals.__ = languages => {
 		if(typeof languages !== 'object')
