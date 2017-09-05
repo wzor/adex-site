@@ -27,17 +27,17 @@
     "HERO_TOKEN_SALE_ENDED": {
         "en": "ADX CREATION EVENT ENDED!",
         "cn": "",
-        "ru": ""
+        "ru": "ВЫПУСК ТОКЕНОВ ADX ЗАВЕРШЕН!"
     },
     "HERO_TOKEN_SALE_ENDED_THANKS": {
         "en": "Thank you for participating!",
         "cn": "",
-        "ru": ""
+        "ru": "Благодарим за участие!"
     },
     "HERO_TOKEN_SALE_ENDED_FOLLOW": {
         "en": "follow us:",
         "cn": "",
-        "ru": ""
+        "ru": "наши блоги"
     },
     "TOKEN_SALE_CITY_SIN": {
         "en": "SIN, SHANGHAI",
@@ -185,7 +185,7 @@
     "NAV_BLOG": {
         "en": "BLOG",
         "cn": "博客",
-        "ru": "блог"
+        "ru": "блог (EN)"
     },
     "NAV_TOKENSALE": {
         "en": "TOKEN SALE",
@@ -275,12 +275,12 @@
     "TOKE_SALE_TERMS": {
         "en": "ADX Creation Event Terms",
         "cn": "",
-        "ru": ""
+        "ru": "Условия выпуска токенов ADX"
     },
     "TOKE_DISTRIB": {
         "en": "Token Distribution",
         "cn": "",
-        "ru": ""
+        "ru": "Распределение токенов"
     },
     "TOKE_SALE_TERMS_1_N": {
         "en": "80%",
@@ -335,7 +335,7 @@
     "TOKE_SALE_TERMS_CLARIF": {
         "en": "Because of the 40,000 ETH hard cap, not all of the 80% tokens are going to be sold in this contribution campaign. The rest will be kept in an AdEx fund address, vested for 24 months with a 6 months cliff, and used within the AdEx dapps themselves to provide easy means of purchasing ADX for easy onboarding of new advertisers.",
         "cn": "",
-        "ru": ""
+        "ru": "Поскольку целью кампании является сбор 40 000 ETH, будут проданы не все из доступных 80% токенов. Оставшаяся часть будет храниться в кошельке AdEx с вестингом на 24 месяца и клиффом на 6 месяцев. Они будут использоваться в децентрализованных приложениях AdEx в целях упрощения покупки токенов ADX новыми участниками."
     },
     "KEY_DATES": {
         "en": "Key Dates",
@@ -343,9 +343,9 @@
         "ru": "Ключевые даты"
     },
     "KEY_DATES_1_D": {
-        "en": "12 Dec",
+        "en": "Dec 12 2016",
         "cn": "",
-        "ru": "2 дек"
+        "ru": "дек 2 2016"
     },
     "KEY_DATES_1_P": {
         "en": "AdEx first announced",
@@ -415,7 +415,7 @@
     "CONTACT_US_PH_NAMES": {
         "en": "Names",
         "cn": "姓名",
-        "ru": ""
+        "ru": "Имя"
     },
     "CONTACT_US_PH_EMAIL": {
         "en": "Email",
@@ -425,7 +425,7 @@
     "CONTACT_US_PH_MESSAGE": {
         "en": "Message",
         "cn": "内容",
-        "ru": ""
+        "ru": "Сообщение"
     },
     "CONTACT_US_BY_EMAIL": {
         "en": "For press and other inquiries, please contact at: ",
@@ -440,17 +440,17 @@
     "TOKEN_SALE_PROGRESS": {
         "en": "EVENT PROGRESS",
         "cn": "",
-        "ru": ""
+        "ru": "ХОД КАМПАНИИ"
     },
     "TOKEN_SALE_PROGRESS_CURRENT": {
         "en": "Current status",
         "cn": "",
-        "ru": ""
+        "ru": "Текущий статус"
     },
     "TOKEN_SALE_PROGRESS_CURRENT_SOLD": {
         "en": "ETH RAISED",
         "cn": "",
-        "ru": ""
+        "ru": "СОБРАНО ETH"
     },
     "TOKEN_SALE_PROGRESS_CAP": {
         "en": "Cap",
@@ -480,7 +480,7 @@
     "CONTACT_US_PH_MESSAGE_BTN": {
         "en": "SEND",
         "cn": "发送",
-        "ru": ""
+        "ru": "ОТПРАВИТЬ"
     },
     "GET_NOTIFIED_PH": {
         "en": "Email",
