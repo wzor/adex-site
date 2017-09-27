@@ -3,7 +3,7 @@
 	"title": "AdEx - Decentralized ad network",
 	"static": ["public", "images", "adex"],
 	"styles": ["pure-grid","basic", "progress-bar", "timeline"],
-	"scripts": ["jquery-3.2.1", "language"],
+	"scripts": ["jquery-3.2.1.min", "language"],
 	"fonts": ["Open+Sans:300,400,600&subset=cyrillic-ext,latin-ext"],
 	"icons": [],
 	"languages": [
