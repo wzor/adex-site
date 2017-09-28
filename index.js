@@ -1,4 +1,4 @@
-process.env.NODE_ENV='production'
+process.env.NODE_ENV = 'production'
 global.app = require('aero')()
 // const cookieSession = require('cookie-session')
 const globalJSON = require('./global.json')
@@ -9,9 +9,9 @@ const langRegex = new RegExp('^\\/+(' + require('./config.json').languages.join(
 
 
 app.use((request, response, next) => {
-	var hours = url.parse(request.url).pathname.match(/jpg$|png|mp4$/) ? 24*24 : 12;
-	response.setHeader("Cache-Control", "public, max-age="+(hours*60*60));
-	response.setHeader("Expires", new Date(Date.now() + (hours*60*60*1000)).toUTCString());
+	var hours = url.parse(request.url).pathname.match(/jpg$|png|mp4$/) ? 24 * 24 : 12;
+	response.setHeader("Cache-Control", "public, max-age=" + (hours * 60 * 60));
+	response.setHeader("Expires", new Date(Date.now() + (hours * 60 * 60 * 1000)).toUTCString());
 	next();
 });
 
@@ -41,7 +41,7 @@ app.use((request, response, next) => {
 
 	const supportedLanguages = new locale.Locales(app.config.languages);
 	const acceptLocales = new locale.Locales(request.headers["accept-language"])
-	let language =  request.language || acceptLocales.best(supportedLanguages).toString().substring(0, 2)
+	let language = request.language || acceptLocales.best(supportedLanguages).toString().substring(0, 2)
 
 	request.globals.languages = supportedLanguages
 	request.globals.language = language
@@ -51,12 +51,12 @@ app.use((request, response, next) => {
 
 	// Translate function
 	request.globals.__ = languages => {
-		if(typeof languages !== 'object')
+		if (typeof languages !== 'object')
 			return languages
 
-		let translation = languages[language] || languages.en 
+		let translation = languages[language] || languages.en
 
-		if(translation === undefined)
+		if (translation === undefined)
 			return '-'
 
 
@@ -71,7 +71,7 @@ app.use((request, response, next) => {
 app.use((request, response, next) => {
 	let lang = request.globals.language;
 	let whitepaperAddress = '/adex/'
-	
+
 	switch (lang) {
 		case 'cn':
 			whitepaperAddress += "AdEx-Whitepaper-v1.4%20-Cici-cleanV2.pdf"
@@ -83,10 +83,10 @@ app.use((request, response, next) => {
 			whitepaperAddress += "AdEx-Whitepaper-v.7.pdf"
 	}
 
-	request.globals.whitepaperAddress = whitepaperAddress
+	request.globals.whitepaperAddress = whitepaperAddress + '?v=' + request.globals.version
 	request.globals.guideAddress = ("/adex/AdEx-Crowdsale-V2.pdf")
 	request.globals.tosAddress = ("/adex/AdEx-Terms-and-Conditions-v.2.2.pdf")
-	request.globals.tokensaleLink = ((lang ? "/" + lang : "" ) + "/tokens" + (request.globals.gurl.path || "/"))
+	request.globals.tokensaleLink = ((lang ? "/" + lang : "") + "/tokens" + (request.globals.gurl.path || "/"))
 
 	next()
 })
@@ -96,7 +96,7 @@ app.rewrite((request, response) => {
 	var language = null;
 
 	let langMatch = langRegex.exec(path)
-	if(langMatch && langMatch[1]) {
+	if (langMatch && langMatch[1]) {
 		language = langMatch[1];
 		request.url = request.url.replace(langMatch[0], '/')
 	}
