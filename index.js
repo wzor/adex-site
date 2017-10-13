@@ -71,22 +71,27 @@ app.use((request, response, next) => {
 app.use((request, response, next) => {
 	let lang = request.globals.language;
 	let whitepaperAddress = '/adex/'
+	let youtubeUrl = ''
 
 	switch (lang) {
 		case 'cn':
-			whitepaperAddress += "AdEx-Whitepaper-v1.4%20-Cici-cleanV2.pdf"
+			whitepaperAddress += 'AdEx-Whitepaper-v1.4%20-Cici-cleanV2.pdf'
+			youtubeUrl = 'https://www.youtube.com/embed/Itm23uq2mC8?rel=0&amp;showinfo=0'
 			break;
 		case 'ru':
-			whitepaperAddress += "AdEx-Whitepaper-v.5.ru.pdf"
+			whitepaperAddress += 'AdEx-Whitepaper-v.5.ru.pdf'
+			youtubeUrl = 'https://www.youtube.com/embed/e1jAzl-qt-E?rel=0&amp;showinfo=0'			
 			break;
 		default:
-			whitepaperAddress += "AdEx-Whitepaper-v.7.pdf"
+			whitepaperAddress += 'AdEx-Whitepaper-v.7.pdf'
+			youtubeUrl = 'https://www.youtube.com/embed/Owa8-ZuLR4I?rel=0&amp;showinfo=0'			
 	}
 
+	request.globals.youtubeUrl = youtubeUrl
 	request.globals.whitepaperAddress = whitepaperAddress + '?v=' + request.globals.version
-	request.globals.guideAddress = ("/adex/AdEx-Crowdsale-V2.pdf")
-	request.globals.tosAddress = ("/adex/AdEx-Terms-and-Conditions-v.2.2.pdf")
-	request.globals.tokensaleLink = ((lang ? "/" + lang : "") + "/tokens" + (request.globals.gurl.path || "/"))
+	request.globals.guideAddress = ('/adex/AdEx-Crowdsale-V2.pdf')
+	request.globals.tosAddress = ('/adex/AdEx-Terms-and-Conditions-v.2.2.pdf')
+	request.globals.tokensaleLink = ((lang ? '/' + lang : '') + '/tokens' + (request.globals.gurl.path || '/'))
 
 	next()
 })
