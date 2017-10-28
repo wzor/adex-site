@@ -84,7 +84,7 @@ app.use((request, response, next) => {
 			break;
 		default:
 			whitepaperAddress += 'AdEx-Whitepaper-v.7.pdf'
-			youtubeUrl = 'https://www.youtube.com/embed/Owa8-ZuLR4I?rel=0&amp;showinfo=0'			
+			youtubeUrl = 'https://www.youtube.com/embed/E4A0bcCQke0?rel=0&amp;showinfo=0'			
 	}
 
 	request.globals.youtubeUrl = youtubeUrl
