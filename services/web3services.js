@@ -5,7 +5,7 @@ const Promise = require('bluebird');
 // var HTTP_PROVIDER = 'http://192.168.0.32:8181'
 const HTTP_PROVIDER = 'https://mainnet.infura.io/W0a3PCAj1UfQZxo5AIrv'
 
-var web3 = new Web3(new Web3.providers.HttpProvider(HTTP_PROVIDER))
+// var web3 = new Web3(new Web3.providers.HttpProvider(HTTP_PROVIDER))
 
 const adxSCAddr = '0x4470bb87d77b963a013db939be332f927f2b992e'
 
@@ -15,13 +15,18 @@ const adxFund = '0xf83f7411046ce4a6fba6584b868fb15d45f0065a'
 const adxAbi = require('./../data/adex-abi')
 
 var cachedTransferable = null;
-const LAST_TRANSFERRABLE = 58751038.9974; // 30.10.2017
+const LAST_TRANSFERRABLE = 56355171;
 const CACHE_INTERVAL = 2 * 60 * 60 * 1000 // 2 hours
 var lastCached = null
 
 function getTransferable() {
 
     return new Promise(function (resolve, reject) {
+
+        // TEMP use of last transferrable
+        return resolve(LAST_TRANSFERRABLE)
+
+        /*
         if (cachedTransferable && lastCached && (Date.now() - lastCached) < CACHE_INTERVAL) {
             return resolve(cachedTransferable);
         }
@@ -78,6 +83,7 @@ function getTransferable() {
             console.log('Transferrable error -> ', err)
             return resolve(LAST_TRANSFERRABLE);
         }
+        */
     });
 }
 
