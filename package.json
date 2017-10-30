@@ -10,7 +10,7 @@
     "start": "node index.js"
   },
   "engines": {
-    "node": "6.11.1"
+    "node": "^6.11.1"
   },
   "dependencies": {
     "aero": "git://github.com/IvoPaunov/aero.git#fdcae55f0321de00b61f008656c427a98fccb3a7",
