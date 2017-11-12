@@ -7,7 +7,9 @@
   "repository": "",
   "license": "",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "docker-build": "docker build --tag=stremio/adex-site .",
+    "docker-push": "docker push stremio/adex-site"
   },
   "engines": {
     "node": "6.11.1"
