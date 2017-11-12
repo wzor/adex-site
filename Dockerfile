@@ -1,5 +1,5 @@
 # Node 6.11 on Debian Jessie
-FROM node:argon
+FROM node:boron
 
 # Meta
 MAINTAINER Ivo Paunov <paunov@strem.io>
