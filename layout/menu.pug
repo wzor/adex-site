@@ -1,0 +1,22 @@
+section#head.bg-lighter
+  .container
+    a(href="/")
+      img.adex-logo-small(src='/adex/adex-logo-clean.png')
+      img.adex-logo-small-txt(src='/adex/adex-logo-txt.png')
+    h1.heading= __(strings.HEADING)
+    nav
+      ul.textht-left
+        li
+          a(href="")= __("Publishers")
+        li
+          a(href="")= __("Advertisers")
+        li
+          a(href="")= __("AdEx Longue")
+        li
+          a(href="/about")= __("About Us")
+        li
+          a(href="")= __("Blog")
+        li
+          a(href="")= __("Contact")
+
+        include ./langs

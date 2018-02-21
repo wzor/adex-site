@@ -1,6 +1,7 @@
-process.env.NODE_ENV = 'production'
+//process.env.NODE_ENV = 'production'
 global.app = require('aero')()
 // const cookieSession = require('cookie-session')
+app.locals = {pretty: true};
 const globalJSON = require('./global.json')
 const locale = require('locale')
 const bodyParser = require('body-parser')
@@ -49,10 +50,17 @@ app.use((request, response, next) => {
 
 	// console.log('process.env.NODE_ENV', process.env.NODE_ENV)
 
+	request.globals.strings = require('./data/strings.json')
+
 	// Translate function
 	request.globals.__ = languages => {
-		if (typeof languages !== 'object')
-			return languages
+		if (typeof languages !== 'object') {
+			if(typeof languages === "string" && request.globals.strings[languages]) {
+				languages = request.globals.strings[languages];
+			} else {
+				return languages
+			}
+		}
 
 		let translation = languages[language] || languages.en
 
@@ -62,8 +70,6 @@ app.use((request, response, next) => {
 
 		return translation
 	}
-
-	request.globals.strings = require('./data/strings.json')
 
 	next()
 })

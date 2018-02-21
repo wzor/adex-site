@@ -52,15 +52,13 @@ html
             document,'script','https://connect.facebook.net/en_US/fbevents.js');
             fbq('init', '1943894792544027'); // Insert your pixel ID here.
             fbq('track', 'PageView');
-        noscript.
-            <img height="1" width="1" style="display:none"
-            src="https://www.facebook.com/tr?id=1943894792544027&ev=PageView&noscript=1"
-            /></noscript>
-            <!-- DO NOT MODIFY -->
-            <!-- End Facebook Pixel Code -->
 
         //if lt IE 9
             script(src='http://html5shiv.googlecode.com/svn/trunk/html5.js')
-    body#adex!= content
+    body
+        <noscript><img height="1" width="1" style="display:none" alt="pixel" src="https://www.facebook.com/tr?id=1943894792544027&ev=PageView&noscript=1" /></noscript>
+        <!-- DO NOT MODIFY -->
+        <!-- End Facebook Pixel Code -->
+        #adex!= content
 
         include ./footer

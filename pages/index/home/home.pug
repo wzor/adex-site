@@ -1,20 +1,4 @@
-section#head.bg-lighter
-  .container
-    img.adex-logo-small(src='/adex/adex-logo-clean.png')
-    img.adex-logo-small-txt(src='/adex/adex-logo-txt.png')
-    h1.heading= __(strings.HEADING)
-    nav
-      ul.textht-left
-        li
-          a(href=tokensaleLink)= __(strings.NAV_TOKENSALE)
-
-        li
-          a(href=whitepaperAddress, target="_blank")= __(strings.NAV_WHITEPAPER)
-          
-        li
-          a(href='https://medium.com/the-adex-blog', target="_blank")= __(strings.NAV_BLOG)
-
-        include ./../../../layout/langs
+include ./../../../layout/menu
 section#hero.bg-lighter-default
   include ./hero  
 
@@ -26,7 +10,7 @@ section#about
         .pure-u-lg-1-2.bg-default.pure-u-md-1.pure-u-1
           .grid-item
             .heading
-              h2= __(strings.WHAT_IS_ADEX)
+              h2= __("WHAT_IS_ADEX")
             p!= __(strings.WHAT_IS_ADEX_LANDING_P1)
             p!= __(strings.WHAT_IS_ADEX_LANDING_P2)
             p!= __(strings.WHAT_IS_ADEX_LANDING_P3)
@@ -50,7 +34,7 @@ section#about
                   span!= __(strings.FEATURES_REGULATED)
               .featured-space-end
 
-include ./../how-it-works
+include ./../how-it-works 
 
 include ./../key-dates
 
