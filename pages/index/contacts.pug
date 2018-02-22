@@ -1,8 +1,27 @@
 section#contacts
-  .pure-g.bg-default
+  .pure-g.bg-dark-default
     .pure-u-1
       .pure-g.container
-        .pure-u-1.bg-default
+        .pure-u-1.pure-u-md-1-2.bg-dark
           .grid-item
-            h2.heading= __(strings.GET_IN_TOUCH)
+            .pure-g
+              .pure-u-1.pure-u-lg-1-3
+                  img.logo(src="/adex/Logo-white.png" alt="Logo")
+              .pure-u-1.pure-u-lg-1-3.pure-u-sm-1-2
+                  .bottom-links
+                      a(href="/about")= __("About Us")
+                      a(href="http://adex.network/adex/AdEx-Whitepaper-v.7.pdf?v=1.0.17" target="_blank")= __("White Paper")
+                      a(href="https://medium.com/the-adex-blog" target="_blank")= __("Blog")
+                      a(href="")= __("Terms of Use")
+                      a(href="")= __("Privacy Policy")
+              .pure-u-1.pure-u-lg-1-3.pure-u-sm-1-2
+                  .bottom-links
+                      a(href="")= __("Advertisers")
+                      a(href="")= __("Publishers")
+                      a(href="")= __("AdEx Lounge")
+                      a(href="https://medium.com/the-adex-blog" target="_blank")= __("Blog")
+                      a(href="")= __("Get in Touch")
+        .pure-u-1.pure-u-md-1-2.bg-default
+          .grid-item
+            h2.heading= __("Let's talk")
               include ./media-links

@@ -2,57 +2,35 @@
     "partners": [
         {
             "name": "Stremio",
-            "img": "/adex/stremio-logo.png",
-            "description": {
-                "en": "Stremio is a semi-open source video entertainment platform designed to source and deliver any type of video content within the same software app. Since it's launch in 2015, Stremio was downloaded by more than 4 million people.",
-                "cn": "Stremio是一个半开源视频娱乐平台，旨在用同一款应用程序即可提供和支持任何类型的视频内容。自从2015年推出以来，Stremio下载量已超过400万人次。",
-                "ru": "Stremio это видеоплатформа с частично открытым кодом, разработанная для хостинга и показа любого типа видеоконтента в рамках одного приложения. С момента своего запуска в 2015 году приложение Stremio скачали более 4 миллионов человек."
-            }
+            "img": "/adex/logo_stremio.png"
+        },
+        {
+            "name": "Propy",
+            "img": "/adex/logo_propy.png"
+        },
+        {
+            "name": "Harbour",
+            "img": "/adex/logo_harbour.png"
+        },
+        {
+            "name": "Dexy",
+            "img": "/adex/logo_dexy.png"
         },
         {
             "name": "Bitmain",
-            "img": "/adex/bitmain-logo.png",
-            "description": {
-                "en": "BITMAIN Technologies is one of the most recognizable and most valuable bitcoin company. The company supplies high-quality, efficient computing chips, and it's main focus is the production of bitcoin miners based on the Bitmain's ASIC chip.",
-                "cn": "BITMAIN Technologies（比特大陆）是最知名和最有价值的比特币公司之一。该公司提供高质量、高效率的计算芯片，而且其主要重点是生产基于比特大陆ASIC芯片的比特币矿机。",
-                "ru": "BITMAIN Technologies это одна из самых известных и высоко оцененных биткоин-компаний. Компания поставляет качественные высокопроизводительные чипы, а ее основной продукт - биткоин-майнеры на основе ASIC чипа Bitmain."
-            }
+            "img": "/adex/bitmain-logo.png"
         },
         {
             "name": "Fintech Blockchain Group",
-            "img": "/adex/fbg-logo.png",
-            "description": {
-                "en": "Fintech Blockchain Group, or FBG, is one of the largest crypto hedge funds and venture capital funds in China. The company has invested in projects like WINGS, Bancor, Coindash, Aeternity and others.",
-                "cn": "FBG是中国最大的加密货币对冲基金和风险基金之一，投资了WINGS、Bancor、Coindash、Aeternity和其它项目。",
-                "ru": "Fintech Blockchain Group (FBG) это один из крупнейших криптовалютных хедж-фондов и венчурных инвестиционных фондов Китая. Компания инвестировала в такие проекты, как WINGS, Bancor, Coindash, Aeternity и другие."
-            }
+            "img": "/adex/fbg-logo.png"
         },
         {
             "name": "IAB Tech Lab",
-            "img": "/adex/iab-seal-logo.png",
-            "description": {
-                "en": "The IAB Technology Laboratory (IAB Tech Lab) is a nonprofit research and development consortium charged with producing and helping companies implement global industry technical standards and solutions for the digital media and advertising industries. ",
-                "cn": "",
-                "ru": ""
-            }
+            "img": "/adex/iab-seal-logo.png"
         },
         {
             "name": "Wings",
-            "img": "/adex/wings-logo.png",
-            "description": {
-                "en": "WINGS is a software platform designed to promote new open, decentralized technology architecture. By using the WINGS DAO organizations are empowered by efficient decision making and decentralized governance.",
-                "cn": "WINGS是一个旨在促进新的开放、去中心化的技术架构的软件平台。通过使用WINGS，去中心化自治组织可以实现有效的决策和去中心化治理。",
-                "ru": "WINGS это программная платформа, разработанная для продвижения новой, открытой и децентрализованной технологической архитектуры. Используя WINGS DAO, организации могут эффективно принимать решения и децентрализовать структуру своего управления."
-            }
-        },
-        {
-            "name": "AdHive",
-            "img": "/adex/adhive-logo.png",
-            "description": {
-                "en": "AdHive",
-                "cn": "AdHive",
-                "ru": "AdHive"
-            }
+            "img": "/adex/wings-logo.png"
         }
     ]
 }

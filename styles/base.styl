@@ -13,6 +13,9 @@ body, .pure-g, .pure-g [class*="pure-u"]
 //     background-color rgba(125, 79, 158, 0.9) !important
 //     color white !important
 
+body, .pure-g, .pure-g [class*="pure-u"]
+ font-family: 'Open Sans';
+
 $BKG_DEFAULT=#1b75bc
 $BKG_DEFAULT_COLOR=#fff
 
@@ -165,7 +168,9 @@ ul
         margin-bottom 30px
     h2
         opacity 0.5
-        font-size 27px
+        font-size 20px
+        font-weight bold
+        text-transform uppercase
 
     .partner
         padding 40px
@@ -175,7 +180,7 @@ ul
             opacity 0.7
 
     .partner-logo
-        height 120px
+        height 100px
         margin-bottom 15px
         display flex
         align-items center
@@ -403,6 +408,7 @@ ul
                 &.sm
                     font-size 0.8em
             b
+                display block
                 font-weight bold
         h2
             font-weight 600
@@ -505,6 +511,11 @@ ul
         vertical-align middle
         margin-right 1em
         width 60px
+    @media screen and (max-width: 767px)
+        .f-row
+            margin-top 0
+        .f-row > *
+            margin-top 2em 
 
 #team
     h2
@@ -628,19 +639,32 @@ ul
             height 50px
             margin-top 25px
 
+
+#contacts
+    a
+        color lightgray
+        display block
+        line-height 2em
+        &:hover
+            color white
+    .logo
+        max-width 80%
+    .bottom-links
+        margin-top 1.3em
+
 .links
     ul
         padding 0
         list-style-type none
-        max-width 440px
-        li
+        //max-width 440px
+        li 
             display inline-block
             background-color rgba(#fff, 0.5)
             border-radius 100%
-            width 100px
-            height 100px
-            margin-right  40px
-            margin-bottom 40px
+            width 60px
+            height 60px
+            margin-right  20px
+            margin-bottom 20px
             transition background-color 0.2s ease-in-out
             &:hover
                 background-color rgba(#fff, 1)
