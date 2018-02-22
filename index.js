@@ -89,8 +89,8 @@ app.use((request, response, next) => {
 
 	request.globals.youtubeUrl = youtubeUrl
 	request.globals.whitepaperAddress = whitepaperAddress + '?v=' + request.globals.version
-	request.globals.guideAddress = ('/adex/AdEx-Crowdsale-V2.pdf')
-	request.globals.tosAddress = ('/adex/AdEx-Terms-and-Conditions-v.2.2.pdf')
+	request.globals.guideAddress = ('adex/AdEx-Crowdsale-V2.pdf')
+	request.globals.tosAddress = ('adex/AdEx-Terms-and-Conditions-v.2.2.pdf')
 	request.globals.tokensaleLink = ((lang ? '/' + lang : '') + '/tokens' + (request.globals.gurl.path || '/'))
 
 	next()
