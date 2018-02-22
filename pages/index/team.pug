@@ -1,5 +1,5 @@
 section#team.text-center
-  .pure-g.container.bg-lighter
+  .pure-g.bg-lighter
     .pure-u-1
       .grid-item
         .pure-g.heading
@@ -7,19 +7,19 @@ section#team.text-center
             h2= __(strings.TEAM)
             //- h4.sub-header!= __(strings.TEAM_P1)
 
-        .pure-g.text-center
-          each member in team.members
-            .pure-u-1.pure-u-sm-1.pure-u-md-12-24.pure-u-lg-8-24.pure-u-xl-8-24
-              .member.text-left
-                .info
-                  img(src=member.img)
-                  .basic
-                    .name= __(member.name)
-                    .position!= __(member.position)
-                    .member-links
-                      ul
-                        each link in member.links
-                          li
-                            a(href=link.link, target="_blank")
-                              .icon(class=link.icon)
-                .description= __(member.description)
+    .pure-g.text-center
+      each member in team.members
+        .pure-u-1.pure-u-sm-1.pure-u-md-12-24.pure-u-lg-8-24.pure-u-xl-8-24
+          .member.text-left
+            .info
+              img(src=member.img)
+              .basic
+                .name= __(member.name)
+                .position!= __(member.position)
+                .member-links
+                  ul
+                    each link in member.links
+                      li
+                        a(href=link.link, target="_blank")
+                          .icon(class=link.icon)
+            .description= __(member.description)

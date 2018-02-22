@@ -1,13 +1,17 @@
 @charset "utf-8";
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,600");
 
+body, .pure-g, .pure-g [class*="pure-u"]
+ font-family: 'Open Sans', sans-serif
+
+
 // @import 'nib'
 
 // /* Cookie thing */
 // .cc_container .cc_btn, .cc_container .cc_btn:visited
-// 	background-color #7d4f9e !important
-// 	background-color rgba(125, 79, 158, 0.9) !important
-// 	color white !important
+//     background-color #7d4f9e !important
+//     background-color rgba(125, 79, 158, 0.9) !important
+//     color white !important
 
 $BKG_DEFAULT=#1b75bc
 $BKG_DEFAULT_COLOR=#fff
@@ -20,7 +24,7 @@ $BKG_LIGHT= rgba(#3c3c3b, 0.1)
 $BKG_LIGHT_COLOR= #3c3c3b
 $BKG_LIGHT_COLOR_HIGHLIGHT= #1b75bc
 
-$BKG_LIGHTER=#efefef  
+$BKG_LIGHTER=#efefef
 $BKG_LIGHTER_COLOR=#3c3c3b
 
 $HEAD_BKG=#fff
@@ -32,21 +36,23 @@ $CONTAINER_VERTICALL_PADDING=60px
 
 // @import "./timeline.styl"
 // @import "./progress-bar.styl"
-body
-    font-family "Open Sans"
-    font-weight 300
-    * 
-        font-weight 300
+//body
+//    font-family "Open Sans",Arial,Helvetica,sans-serif;
+//    font-weight 300
+//    *
+//        font-weight 300
+
+
 
 strong
-    font-weight 600
+    font-weight 900
 
 a
     color inherit
     text-decoration none
     cursor pointer
 
-h2 
+h2
     font-size 2em
     margin-top 10px
     margin-bottom 10px
@@ -66,10 +72,10 @@ ul
         content ''
         display block
         top 0
-.left 
+.left
     float left
     text-align left
-.right 
+.right
     float right
     text-align right
 
@@ -100,6 +106,7 @@ ul
 .big-button
     text-transform uppercase
     display block
+    font-size 24px
     font-weight bold
     text-align center
     padding 1em
@@ -115,6 +122,9 @@ ul
 
 .inset
     padding 0em 2em
+    font-size 14px
+    line-height 20px
+    text-align center
 
 .v-sep
     border-right 1px solid rgba(255,255,255, .3)
@@ -137,14 +147,14 @@ ul
     span
         position relative
         display inline-block
-        vertical-align middle			
+        vertical-align middle
         max-width calc(100% - 120px)
 
     .icon
         width 86px
         height 86px
         display inline-block
-        vertical-align middle			
+        vertical-align middle
         margin-right 27px
 
 .feature-heading
@@ -170,7 +180,7 @@ ul
         display flex
         align-items center
         justify-content center
-        img 
+        img
             max-width 100%
             max-height 100%
 .bg-default
@@ -183,7 +193,7 @@ ul
     background-color $BKG_LIGHT
     color $BKG_LIGHT_COLOR
 .bg-lighter
-    background-color $BKG_DEFAULT_COLOR
+    background-color $BKG_LIGHTER
     color $BKG_LIGHTER_COLOR
 .bg-default-lighter
     background $BKG_LIGHTER
@@ -196,22 +206,25 @@ ul
     background-color: #1b75bc;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%230e63ab' fill-opacity='0.57'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     color $BKG_DEFAULT_COLOR;
+    font-size 44px
+    font-weight 300
+
 
 .container
     max-width $MAX_WIDTH
     margin auto
     position relative
 
-.err 
+.err
     color $BKG_DEFAULT
 .grid-item
-    padding-left $CONTAINER_HORIZONTAL_PADDING 
-    padding-right $CONTAINER_HORIZONTAL_PADDING 
+    padding-left $CONTAINER_HORIZONTAL_PADDING
+    padding-right $CONTAINER_HORIZONTAL_PADDING
     padding-top $CONTAINER_VERTICALL_PADDING
-    padding-bottom $CONTAINER_VERTICALL_PADDING 
+    padding-bottom $CONTAINER_VERTICALL_PADDING
     &.small
         padding-top 0.5 * $CONTAINER_VERTICALL_PADDING
-        padding-bottom 0.5 * $CONTAINER_VERTICALL_PADDING 
+        padding-bottom 0.5 * $CONTAINER_VERTICALL_PADDING
 .heading
     margin-bottom 20px
     .sub-header
@@ -273,10 +286,10 @@ ul
         text-align center !important
         width 100%
         .icon
-            display block 
+            display block
             margin auto
-            margin-bottom 10px				
-        span 
+            margin-bottom 10px
+        span
             display block
             max-width 100%
 
@@ -290,6 +303,8 @@ ul
     position relative
     overflow hidden
     width 100%
+    p
+        opacity 0.7
     .to-sales-end, .to-sales-start, .sales-ended
         display none
     #clock-label
@@ -349,8 +364,8 @@ ul
             padding 12px
             word-break break-all
             margin-bottom 10px
-            font-weight 400		
-            margin-top 20px		
+            font-weight 400
+            margin-top 20px
             &:hover, &:focus
                 color rgba(#3c3c3b, 1)
         .close
@@ -375,10 +390,10 @@ ul
                 font-weight 400
                 &:first-child
                     margin-right 30px
-                                    
+
     header.heading
         color $BKG_LIGHTER
-        h1 
+        h1
             color $BKG_DEFAULT_COLOR
             text-align center
             text-transform uppercase
@@ -413,7 +428,7 @@ ul
 
    .hero-img
         height 100%
-    nav 
+    nav
         position absolute
         top 0.5 * $CONTAINER_HORIZONTAL_PADDING
         right 1 * $CONTAINER_HORIZONTAL_PADDING
@@ -428,7 +443,20 @@ ul
             right 0.5 * $CONTAINER_HORIZONTAL_PADDING
 
 
+#what-is
+    background-image: url(/adex/About-bgr.jpg);
+    background-size cover
+    color white
+    font-size 16px
+    line-height 26px
+    padding 80px
+    font-weight 300
+    .container
+        max-width 670px
 #about
+    h2
+        font-size 44px
+        font-weight 300
     .yt-container
         position relative
         width 100%
@@ -479,57 +507,62 @@ ul
         width 60px
 
 #team
+    h2
+        font-size 44px
+        font-weight 300
     h4
-        font-size 19px
+        font-size 18px
         line-height 29px
     .member
         margin auto
         padding $CONTAINER_HORIZONTAL_PADDING
         padding-left $CONTAINER_HORIZONTAL_PADDING
         padding-right $CONTAINER_HORIZONTAL_PADDING
-        .info
-            display block
-            margin-bottom 25px
-            img 
-                width 80px
-                display inline-block
-                margin-right 25px
-                vertical-align top
-            .description
-                line-height 24px
-            .basic
-                position relative
-                display inline-block
-                vertical-align top
-                .name
-                    color $BKG_DEFAULT
-                    font-size 1em
-                .position
-                    font-size 0.8em
-                    text-transform uppercase
-                .member-links
-                    ul			
-                        padding 0
-                        list-style-type none
-                        max-width 137px
-                        margin-bottom 0
-                        li 
-                            display inline-block
-                            width 20px
-                            height 20px
-                            margin-right 5px
-                            margin-bottom 0
-                            transition opacity 0.2s ease-in-out
-                            opacity 1
-                            &:hover
-                                opacity 0.7
-                            a
-                                display block
-                                width 100%
-                                height 100%
-                                .icon
-                                    width 100%
-                                    height 100%
+    .info
+        display block
+        margin-bottom 25px
+        img
+            width 80px
+            display inline-block
+            margin-right 25px
+            vertical-align top
+    .description
+        font-size 13px
+        line-height 20px
+    .basic
+        position relative
+        display inline-block
+        vertical-align top
+        .name
+            color $BKG_DEFAULT
+            font-size 1em
+        .position
+            font-size 0.8em
+            text-transform uppercase
+            letter-spacing 0.1em
+        .member-links
+            ul
+                padding 0
+                list-style-type none
+                max-width 137px
+                margin-bottom 0
+                li
+                    display inline-block
+                    width 20px
+                    height 20px
+                    margin-right 5px
+                    margin-bottom 0
+                    transition opacity 0.2s ease-in-out
+                    opacity 1
+                    &:hover
+                        opacity 0.7
+                    a
+                        display block
+                        width 100%
+                        height 100%
+                        .icon
+                            width 100%
+                            height 100%
 
     @media screen and (max-width: 568px)
         .member
@@ -537,23 +570,6 @@ ul
             padding-left 0
             padding-right 0
 
-#how-it-works
-    .img
-        background-image url(/adex/how-it-works.png)
-        max-width 400px
-        margin auto
-        &:before
-            padding-top 100%
-
-#token-distribution
-    .terms	
-        margin-top 50px
-    .img
-        background-image url(/adex/token-sale-terms.png)
-        max-width 400px
-        margin auto
-        &:before
-            padding-top 100%
 
 #features
     .grid-item
@@ -572,7 +588,7 @@ ul
             padding-right 0
             padding-top 0.5 * $CONTAINER_VERTICALL_PADDING
             padding-bottom 0.5 * $CONTAINER_VERTICALL_PADDING
-    .desc 
+    .desc
         display inline-block
         vertical-align middle
         max-width calc(100% - 150px)
@@ -613,11 +629,11 @@ ul
             margin-top 25px
 
 .links
-    ul			
+    ul
         padding 0
         list-style-type none
         max-width 440px
-        li 
+        li
             display inline-block
             background-color rgba(#fff, 0.5)
             border-radius 100%
@@ -643,7 +659,7 @@ ul
 
     @media screen and (max-width: 568px)
         ul
-            li 
+            li
                 margin-right  20px
                 margin-bottom 20px
 
@@ -656,7 +672,7 @@ ul
                 background-color rgba($BKG_LIGHTER_COLOR, 0.2)
                 &:hover
                     background-color rgba($BKG_LIGHTER_COLOR, 0.4)
-                a	
+                a
                     .icon
                         opacity 1
 footer
@@ -720,11 +736,11 @@ input[type="submit"]
 
 /* Nav */
 // nav
-//     ul			
+//     ul
 //         padding 0
 //         list-style-type none
-//         max-width 440px		
-//         li 
+//         max-width 440px
+//         li
 //             display inline-block
 //             vertical-align top
 //             opacity 0.9
@@ -763,7 +779,7 @@ input[type="submit"]
 #ethereum-address
     input[type="checkbox"]
         display none
-    label 
+    label
         display block
         .box
             cursor pointer
@@ -783,10 +799,10 @@ input[type="submit"]
         overflow hidden
         backface-visibility hidden
     #to-accept-msg
-        max-height initial 
+        max-height initial
         opacity 1
     #ethereum-address-adr
-        max-height 0 
+        max-height 0
         opacity 0
 
     input#cb-notus
@@ -853,7 +869,7 @@ nav
         box-sizing: border-box
     .nav
         transition all 0.5s ease-in-
-    label 
+    label
         display none
     a
         text-transform uppercase
@@ -867,7 +883,7 @@ nav
             font-weight: bold
     .langs
         display inline-block
-        a	
+        a
             &:first-child
                 padding-left 10px
                 border-left 1px solid
@@ -875,13 +891,13 @@ nav
     .logo-p
         max-height 60px
         float left
-        margin-right 10px	
-        transition all 0.6s ease-in-out	
-    .logo-t 
+        margin-right 10px
+        transition all 0.6s ease-in-out
+    .logo-t
         // margin-top 20px
         max-height 62px
         float left
-        transition all 0.6s ease-in-out		
+        transition all 0.6s ease-in-out
     .logo-s
         margin-top 28px
         margin-left: 5px
@@ -899,14 +915,14 @@ nav
             display none
             width: 32px;
             height: 64px;
-            display: block;	
-            cursor: pointer;			
+            display: block;
+            cursor: pointer;
             opacity: 0; /* hide this */
-            z-index: 2; /* and place it over the hamburger */			
+            z-index: 2; /* and place it over the hamburger */
             -webkit-touch-callout: none;
             &:checked
                 & ~ label
-                    span 
+                    span
                         opacity 1
                         transform rotate(-45deg) translate(1px, -4px)
                         &:nth-child(2)
@@ -976,7 +992,7 @@ nav#navigation.background input:not(:checked) + label .menu-line
                 margin-top 10px
                 border-top 1px solid $bg-dark-highlight
                 display inline-block
-                a	
+                a
                     display inline-block
                     &:first-child
                         padding-left 0
