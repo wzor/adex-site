@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 mkdir -p dist
 mkdir -p dist/{ru,cn,api}
 cp -rf public dist/
