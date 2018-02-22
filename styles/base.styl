@@ -24,7 +24,7 @@ $BKG_LIGHTER=#efefef
 $BKG_LIGHTER_COLOR=#3c3c3b
 
 $HEAD_BKG=#fff
-
+$HIGHLIGHT_GREEN=#14dc9d
 
 $MAX_WIDTH=1280px
 $CONTAINER_HORIZONTAL_PADDING=40px
@@ -97,6 +97,33 @@ ul
         margin-bottom 20px
         font-size 2em
 
+.big-button
+    text-transform uppercase
+    display block
+    font-weight bold
+    text-align center
+    padding 1em
+    color $BKG_DEFAULT_COLOR
+    &:hover
+        filter: opacity(90%)
+    &.blue
+        background-color $BKG_LIGHT_COLOR_HIGHLIGHT
+    &.green
+        background-color $HIGHLIGHT_GREEN
+
+
+
+.inset
+    padding 0em 2em
+
+.v-sep
+    border-right 1px solid rgba(255,255,255, .3)
+
+@media screen and (max-width: 767px)
+    .v-sep
+        border none
+
+
 .feature-grid
     width 100%
 
@@ -156,10 +183,10 @@ ul
     background-color $BKG_LIGHT
     color $BKG_LIGHT_COLOR
 .bg-lighter
-    background-color $BKG_LIGHTER
+    background-color $BKG_DEFAULT_COLOR
     color $BKG_LIGHTER_COLOR
 .bg-default-lighter
-    background linear-gradient(to right, $BKG_DEFAULT 0%,$BKG_DEFAULT 50%,$BKG_LIGHTER 50%,$BKG_LIGHTER 100%)
+    background $BKG_LIGHTER
 .bg-lighter-default
     background linear-gradient(to right, $BKG_LIGHTER 0%,$BKG_LIGHTER 50%,$BKG_DEFAULT 50%,$BKG_DEFAULT 100%)
 .bg-dark-default
@@ -255,12 +282,14 @@ ul
 
 
 #hero
+    padding-top: 100px;
     background-image: url(/adex/hero-background.jpg);
+    background-repeat no-repeat
+    background-position center center
+    background-size cover
     position relative
     overflow hidden
     width 100%
-    a 
-        color $BKG_LIGHT_COLOR_HIGHLIGHT
     .to-sales-end, .to-sales-start, .sales-ended
         display none
     #clock-label
@@ -348,16 +377,19 @@ ul
                     margin-right 30px
                                     
     header.heading
-        text-transform uppercase
+        color $BKG_LIGHTER
         h1 
-            color $BKG_LIGHT_COLOR_HIGHLIGHT
-            font-size 1.8em
+            color $BKG_DEFAULT_COLOR
+            text-align center
+            text-transform uppercase
+            font-size 2em
             margin-top 0
             span
                 &.sm
                     font-size 0.8em
+            b
+                font-weight bold
         h2
-            color $BKG_LIGHT_COLOR
             font-weight 600
             font-size 1.8em
             margin-bottom 5px
@@ -379,41 +411,7 @@ ul
                 height 16px
                 margin-right 8px
 
-    .hero-left
-        .adex-logo
-            max-width 100%
-        h1
-            opacity .7
-        legend
-            color #3c3c3b
-        input 
-            background rgba($BKG_DARK, 0.2)
-            padding 20px
-            &[type='submit']
-                background $BKG_DEFAULT
-                color $BKG_DEFAULT_COLOR
-                padding-left 50px
-                padding-right 50px
-            &[type='email']
-                width calc(100% - 212px) 
-        .yt-container
-            position relative
-            width 100%
-            height 0
-            padding-bottom 56.25%
-            margin-top 21.875%
-
-            .video
-                position absolute
-                top 0
-                left 0
-                width 100%
-                height 100%
-        @media screen and (max-width: 1023px)
-            .yt-container
-                margin-top auto
-
-    .hero-img
+   .hero-img
         height 100%
     nav 
         position absolute
@@ -425,61 +423,31 @@ ul
         nav
             display none
 
-    &:after
-        content ''
-        position absolute
-        top 0
-        left 0
-        right 0
-        bottom 0
-        background: linear-gradient(to bottom, rgba(229,229,229,0.1) 0%,rgba(229,229,229,0) 50%,rgba(229,229,229,0.1) 100%);
-        pointer-events none
-
-    @media screen and (max-width: 1023px)
-        .hero-right
-            display none
-            // text-align right
-            // background $BKG_LIGHTER
-            // height 300px
-            // .top-angle
-            // 	right -40%
-            // .bot-angle
-            // 	right -40%	
-            // .hero-img
-            // 	margin-right 300px 
-    // @media screen and (max-width: 786px)
-    // 	.hero-right
-    // 		text-align right
-    // 		background $BKG_LIGHTER
-    // 		height 1 * $CONTAINER_HORIZONTAL_PADDING + 36px
-    // 		.top-angle
-    // 			right -46%
-    // 		.bot-angle
-    // 			right -46%	
-    // 		.hero-img
-    // 			display none			
-    // 	&:after
-    // 		display none
-
     @media screen and (max-width: 568px)
-        .hero-left
-            input
-                &[type='submit']
-                    padding-left 50px
-                    padding-right 50px
-                    display block
-                    width calc(100% - 100px)
-                &[type='email']
-                    width calc(100% - 40px) 
-                    max-width 100%
-        .hero-right
-            height $CONTAINER_HORIZONTAL_PADDING + 46px
-        nav
+       nav
             right 0.5 * $CONTAINER_HORIZONTAL_PADDING
 
 
 #about
-    ul.big
+    .yt-container
+        position relative
+        width 100%
+        height 0
+        padding-bottom 56.25%
+        margin-top 2em
+        margin-bottom 4em
+
+        .video
+            position absolute
+            top 0
+            left 0
+            width 100%
+            height 100%
+    @media screen and (max-width: 1023px)
+        .yt-container
+            margin-top auto
+
+     ul.big
         padding 0
         padding-left 50px
         list-style-type none
@@ -1003,7 +971,7 @@ nav#navigation.background input:not(:checked) + label .menu-line
                         padding-left 0
                         border-left 0
 
-@media screen and (max-width: 1200px)
+@media screen and (max-width: 768px)
     nav
         .logo-t, .logo-s
             display none

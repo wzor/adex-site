@@ -3,45 +3,27 @@ section#hero.bg-lighter-default
   include ./hero  
 
 
-section#about
-  .pure-g.bg-default-lighter
+section#about.bg-lighter
+  .pure-g.container
     .pure-u-1
-      .pure-g.container
-        .pure-u-lg-1-2.bg-default.pure-u-md-1.pure-u-1
-          .grid-item
-            .heading
-              h2= __("WHAT_IS_ADEX")
-            p!= __(strings.WHAT_IS_ADEX_LANDING_P1)
-            p!= __(strings.WHAT_IS_ADEX_LANDING_P2)
-            p!= __(strings.WHAT_IS_ADEX_LANDING_P3)
-        .pure-u-lg-1-2.pure-u-md-1.pure-u-1
-          .grid-item.feature-grid
-            .heading.feature-heading
-              h2= __(strings.FEATURES)
-            .feature-holder
-              .feature-tabs
-                  .icon.icon-adex-clear
-                  span!= __(strings.FEATURES_CLEAR)
-              .feature-tabs
-                  .icon.icon-adex-available
-                  span!= __(strings.FEATURES_AVAILABLE)
-              .featured-space
-              .feature-tabs
-                  .icon.icon-smaller.icon-adex-anonymous
-                  span!= __(strings.FEATURES_ANONYMOUS)
-              .feature-tabs
-                  .icon.icon-smaller.icon-adex-regulated
-                  span!= __(strings.FEATURES_REGULATED)
-              .featured-space-end
+        h2.text-center= __('What We Do')
+        .yt-container
+            iframe(class="yt-video-iframe video" type="text/html" src="https://www.youtube.com/embed/E4A0bcCQke0?rel=0&amp;amp;showinfo=0" allowfullscreen="allowfullscreen" frameborder="0")
 
-include ./../how-it-works 
+section#features.hero-inner
+  .pure-g.container
+    .pure-u-1
+        h2.text-center= __('Features')
+        p Put fancy icons here
 
-include ./../key-dates
+//include ./../how-it-works 
+
+//include ./../key-dates
 
 include ./../partners
 
 
 
-include ./../seenon
+//include ./../seenon
 
 include ./../contacts
