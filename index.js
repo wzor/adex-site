@@ -70,7 +70,7 @@ app.use((request, response, next) => {
 
 app.use((request, response, next) => {
 	let lang = request.globals.language;
-	let whitepaperAddress = '/adex/'
+	let whitepaperAddress = 'adex/'
 	let youtubeUrl = ''
 
 	switch (lang) {
