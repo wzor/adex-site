@@ -3,7 +3,7 @@ FROM node:boron
 
 # Meta
 MAINTAINER Ivo Paunov <paunov@strem.io>
-LABEL Description="AdEx Website" Vendor="AdEx" Version="0.0.1"
+LABEL Description="AdEx Website" Vendor="AdEx Network OÜ" Version="1.0.0"
 
 # Create app directory
 RUN mkdir -p /var/www/website

@@ -3,8 +3,6 @@ html
     head
         meta(charset='utf-8')
 
-        block head
-
         title= __(strings.ADEX_TITLE)
 
         meta(name='description', content= __(strings.ADEX_META_DESC))
@@ -14,7 +12,7 @@ html
         meta(property='og:title', content= __(strings.ADEX_META_TITLE))
         meta(property='og:description', content= __(strings.ADEX_META_DESC_2))
         meta(property='og:type', content= __(strings.ADEX_META_TYPE))
-        meta(property='og:url', content='http://adex.network'+url.path)
+        meta(property='og:url', content='http://adex.network'+gurl.path)
         meta(property='og:image', content='http://adex.network/adex/adex-logo-w-txt.png')
 
         meta(name='application-name', content='AdEx')
@@ -23,7 +21,7 @@ html
         meta(name='msapplication-square150x150logo', content='/adex/ms/square.png')
         meta(name='msapplication-square310x310logo', content='/adex/ms/large.png')
 
-        link(rel="canonical",href="http://adex.network"+url.path)
+        link(rel="canonical",href="http://adex.network"+gurl.path)
 
         meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1")
 

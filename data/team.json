@@ -266,6 +266,30 @@
         },
         {
             "name": { 
+                "en": "Georgi Matev",
+                "cn": "Georgi Matev",
+                "ru": "Георги Матев"
+            },
+            "position": { 
+                "en": "LEGAL ADVISOR",
+                "cn": "法律顾问",
+                "ru": "ЮРИДИЧЕСКИЙ КОНСУЛЬТАНТ"
+            },
+            "img": "/adex/photo-georgi-matev.jpg",
+            "description": { 
+                "en": "Attorney at Law with substantial experience in the field of civil law especially ICT and corporate law. Extensive competence in VC funding and transactions. Georgi is passionate about blockchain technologies and the legal aspects and regulation framework accordingly.",
+                "cn":"",
+                "ru": ""
+            }, 
+            "links": [
+                {
+                    "icon": "icon-adex-linkedin",
+                    "link": "https://www.linkedin.com/in/georgi-matev-41803411/"
+                }
+            ]
+        },
+        {
+            "name": { 
                 "en": "Guy Corem",
                 "cn": "Guy Corem",
                 "ru": "Гай Корем"
@@ -364,18 +388,18 @@
             "name": { 
                 "en": "Vincent Zhou",
                 "cn": "Vincent Zhou",
-                "ru": ""
+                "ru": "Винсент Чжоу"
             },
             "position": { 
                 "en": "Strategy Advisor - China",
                 "cn": "",
-                "ru": ""
+                "ru": "Стратегический консультант (Китай)"
             },
             "img": "/adex/photo-vincent-zhou.png",
             "description": { 
                 "en": "Vincent is the general manager and founding partner of Fintech Blockchain Group. He has a successful career in high tech and blockchain companies, and is considered to be one of the most influential blockchain venture capitalists in China.",
                 "cn":"",
-                "ru": ""
+                "ru": "Винсент -- руководитель и один из основателей Fintech Blockchain Group. Имеет успешный опыт работы в хайтек и блокчейн-компаниях, и считается одним из наиболее влиятельных венчурных инвесторов в блокчейн-индустрии Китая."
             },
             "links": [
                 {

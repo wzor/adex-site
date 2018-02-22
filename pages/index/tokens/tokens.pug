@@ -3,7 +3,6 @@ section#head.bg-lighter
     img.adex-logo-small(src='/adex/adex-logo-clean.png')
     img.adex-logo-small-txt(src='/adex/adex-logo-txt.png')
     h1.heading= __(strings.HEADING)
-    h1.heading= page || 'hoi'
     nav
       ul.textht-left
         li
@@ -32,120 +31,11 @@ section#what-is-adex.bg-default
           .pure-u-1.pure-u-md-10-24
             p!= __(strings.WHAT_IS_ADEX_P3)
 
-section#how-it-works.bg-light.text-center
-  .pure-g.container
-    .pure-u-1
-      .grid-item
-        .pure-g.heading
-          .pure-u-1
-            h2= __(strings.HOW_IT_WORKS)
-        .pure-g 
-          .pure-u-1.pure-u-lg-10-24
-            .img
-            //- img(src="/adex/how-it-works.png")
-          .pure-u-1.pure-u-lg-1-24
-          .pure-u-1.pure-u-lg-13-24.text-left
-            p= __(strings.HOW_IT_WORKS_P1)
-            p= __(strings.HOW_IT_WORKS_P2)
-
-section.bg-light#features-tokens
-  .pure-g.container.text-center
-    .pure-u-1
-      .grid-item
-        .pure-g.heading
-          .pure-u-1
-            h2= __(strings.FEATURES)
-        .pure-g.text-left
-          .pure-u-1.pure-u-md-1-2.pure-u-xl-1-4
-            .grid-item
-              .icon.icon-adex-clear
-              .desc
-                span!= __(strings.FEATURES_CLEAR)
-          .pure-u-1.pure-u-md-1-2.pure-u-xl-1-4
-            .grid-item
-              .icon.icon-adex-available
-              .desc
-                span!= __(strings.FEATURES_AVAILABLE)
-          .pure-u-1.pure-u-md-1-2.pure-u-xl-1-4
-            .grid-item
-              .icon.icon-smaller.icon-adex-anonymous
-              .desc
-                span!= __(strings.FEATURES_ANONYMOUS)
-          .pure-u-1.pure-u-md-1-2.pure-u-xl-1-4
-            .grid-item
-              .icon.icon-smaller.icon-adex-regulated
-              .desc
-                span!= __(strings.FEATURES_REGULATED)
-
-section#slae-terms.text-center
-  .pure-g.container
-    .pure-u-1
-      .grid-item
-        .pure-g.heading
-          .pure-u-1
-            h2= __(strings.TOKE_SALE_TERMS)
-        .pure-g 
-
-          .pure-u-1.pure-u-lg-24-24.text-center
-            .terms
-              h4
-                strong Contribution campaign starts at Jun 30th at 11:00 UTC
-              h4
-                strong Contribution campaign  closes at Jul 30th at 11:00 UTC
-              h4
-                strong Hard cap is set to 40,000ETH
-              h4
-                strong First day price: 1ETH = 1170ADX (+30% bonus)
-              h4
-                strong First week price: 1ETH = 1035ADX (+15% bonus)
-              h4
-                strong Regular price: 1ETH = 900ADX
-              h4
-                span For more details, please see our <a href="https://medium.com/the-adex-blog/adex-token-sale-to-kick-off-on-june-30th-84b437f5f0bb"><u>Medium post</u></a>
-
-section#slae-terms.bg-light.text-center
-  .pure-g.container
-    .pure-u-1
-      .grid-item
-        .pure-g.heading
-          .pure-u-1
-            h2= __(strings.TOKE_DISTRIB)
-        .pure-g 
-          .pure-u-1.pure-u-lg-10-24
-            .img
-            //- img(src="/adex/how-it-works.png")
-          .pure-u-1.pure-u-lg-1-24
-          .pure-u-1.pure-u-lg-13-24.text-left
-            .terms
-              h4
-                strong= __(strings.TOKE_SALE_TERMS_1_N)
-                span= __(strings.TOKE_SALE_TERMS_1_P)
-              h4
-                strong= __(strings.TOKE_SALE_TERMS_2_N) 
-                span= __(strings.TOKE_SALE_TERMS_2_P)
-              h4
-                strong= __(strings.TOKE_SALE_TERMS_3_N)
-                span= __(strings.TOKE_SALE_TERMS_3_P)
-              h4
-                strong= __(strings.TOKE_SALE_TERMS_4_N) 
-                span= __(strings.TOKE_SALE_TERMS_4_P) 
-              h4
-                strong= __(strings.TOKE_SALE_TERMS_5_N) 
-                span= __(strings.TOKE_SALE_TERMS_5_P)
-              h4
-                strong NOTE:&nbsp;
-                span= __(strings.TOKE_SALE_TERMS_CLARIF)
-section#key-dates
-  .pure-g.container.text-center
-    .pure-u-1
-      .grid-item
-        .pure-g.heading
-          .pure-u-1
-            h2= __(strings.KEY_DATES)
-        .pure-g 
-          .pure-u-1
-            include ./timeline
-            
+include ./../how-it-works
+include ./../features-row
+//- include ./../sale-terms
+include ./../token-distribution
+include ./../key-dates
 include ./../partners
 include ./../team
 include ./../seenon
