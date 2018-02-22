@@ -97,36 +97,6 @@ ul
         margin-bottom 20px
         font-size 2em
 
-
-#head
-    padding 15px 30px 10px
-    color
-
-    .adex-logo-small
-        vertical-align middle
-        margin-right 10px
-        height 57px
-    .adex-logo-small-txt
-        vertical-align middle		
-        height 33px
-        margin-right 30px			
-
-    .heading
-        display inline-block
-        vertical-align middle	
-        margin 0
-        margin-top 16px								
-        font-size 1.2em		
-    nav
-        float right
-        margin-top 12px
-
-        ul
-            max-width inherit
-            a
-                font-size 1em
-                font-weight 400
-
 .feature-grid
     width 100%
 
@@ -232,31 +202,6 @@ ul
         padding-top 0.5 * $CONTAINER_VERTICALL_PADDING
         padding-bottom 0.5 * $CONTAINER_VERTICALL_PADDING
 
-@media screen and (max-width: 600px)
-    #head
-        nav
-            font-size .9em
-
-@media screen and (max-width: 400px)
-    #head
-        img
-            width 0
-            height 49px
-            margin-right 0!important
-    .header
-        nav
-            display block !important
-            ul
-                margin 0
-                li
-                    padding 5px 0
-                    margin-left 0 !important
-                    margin-right 15px
-
-@media screen and (max-width: 670px)
-    #head
-        .heading
-            display none
 
 @media screen and (max-width: 1440px)
     .feature-grid
@@ -795,37 +740,37 @@ input[type="submit"]
         min-height 120px
 
 /* Nav */
-nav
-    ul			
-        padding 0
-        list-style-type none
-        max-width 440px		
-        li 
-            display inline-block
-            vertical-align top
-            opacity 0.9
-            &:not(:first-child)
-                margin-left 15px
-            a
-                font-size 0.9em
-                display block
-                width 100%
-                height 100%
-                text-transform uppercase
-            &.lang
-                color $BKG_DEFAULT
-                margin-left 10px
-                &.first
-                    padding-left 8px
-                    border-left 1px solid #fff
-                    border-left-color $BKG_DEFAULT
-                    margin-left 15px
-                a.selected
-                    color $BKG_LIGHT_COLOR
-            .sub
-                font-size 0.7em
-                opacity 0.5
-                cursor default
+// nav
+//     ul			
+//         padding 0
+//         list-style-type none
+//         max-width 440px		
+//         li 
+//             display inline-block
+//             vertical-align top
+//             opacity 0.9
+//             &:not(:first-child)
+//                 margin-left 15px
+//             a
+//                 font-size 0.9em
+//                 display block
+//                 width 100%
+//                 height 100%
+//                 text-transform uppercase
+//             &.lang
+//                 color $BKG_DEFAULT
+//                 margin-left 10px
+//                 &.first
+//                     padding-left 8px
+//                     border-left 1px solid #fff
+//                     border-left-color $BKG_DEFAULT
+//                     margin-left 15px
+//                 a.selected
+//                     color $BKG_LIGHT_COLOR
+//             .sub
+//                 font-size 0.7em
+//                 opacity 0.5
+//                 cursor default
 
 #cb-show-hide-modal
     display none
@@ -893,3 +838,177 @@ nav
                                 #to-accept-msg
                                     opacity 0
                                     max-height 0
+
+
+/* Nav
+ */
+$bg-nav = 255, 255, 255
+$fg-nav = #fff
+$bg-dark-highlight = #666
+$container-max-width = 1200px
+$container-small-max-width = 820px
+$container-smaller-max-width = 680px
+$container-horizontal-padding = 40px
+$container-vertival-padding = 0px
+$container-vertival-margin = 100px
+$bg-nav = #201f32
+$bg-nav-color = #fff
+
+nav, nav a
+    transition all 0.2s ease-in
+/* Nav
+ */
+nav
+    color $fg-nav
+    position fixed
+    top: 0px; right: 0px; left: 0px;
+    z-index 999
+    text-align right
+    backface-visibility hidden
+    transition all 0.3s ease-in-out
+    background rgba($bg-nav, 0)
+    .container
+        margin 0 auto
+        position relative
+        padding 20px 40px
+        box-sizing: border-box
+    .nav
+        transition all 0.5s ease-in-
+    label 
+        display none
+    a
+        text-transform uppercase
+        color $nav-color
+        font-weight 300
+        font-size 16px
+        line-height 60px
+        margin 0px 15px 0px 0px
+        &.active
+            color $bg-dark-highlight
+            font-weight: bold
+    .langs
+        display inline-block
+        a	
+            &:first-child
+                padding-left 10px
+                border-left 1px solid
+
+    .logo-p
+        max-height 60px
+        float left
+        margin-right 10px	
+        transition all 0.6s ease-in-out	
+    .logo-t 
+        // margin-top 20px
+        max-height 62px
+        float left
+        transition all 0.6s ease-in-out		
+    .logo-s
+        margin-top 28px
+        margin-left: 5px
+        max-height 20px
+        float left
+        transition all 0.6s ease-in-out
+    .dark
+        display: none
+    &#navigation
+        input, label
+            position: absolute;
+            right: 40px;
+            top: 20px;
+        input
+            display none
+            width: 32px;
+            height: 64px;
+            display: block;	
+            cursor: pointer;			
+            opacity: 0; /* hide this */
+            z-index: 2; /* and place it over the hamburger */			
+            -webkit-touch-callout: none;
+            &:checked
+                & ~ label
+                    span 
+                        opacity 1
+                        transform rotate(-45deg) translate(1px, -4px)
+                        &:nth-child(2)
+                            opacity 0
+                            transform rotate(0deg) scale(0.1, 0.1)
+                        &:nth-child(3)
+                            opacity 1
+                            transform rotate(405deg) translate(-2px, 2px)
+        label
+            cursor: pointer;
+            span
+                &.menu-line
+                    display: block;
+                    width: 33px;
+                    height: 4px;
+                    margin-bottom: 5px;
+                    position: relative;
+                    background: #fff
+                    border-radius: 3px;
+                    z-index: 1;
+                    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), background 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.55s ease-in-out;
+                    &:first-child
+                        transform-origin: 100% 0%;
+                    &:nth-child(3)
+                        transform-origin: 100% 100%;
+    &.background
+        background #fff
+        color #000000
+        .dark
+            display: inline
+        .light
+            display: none
+
+nav#navigation.background input:not(:checked) + label .menu-line
+        background-color: #000
+
+@media screen and (max-width: 895px)
+
+    nav#navigation
+        padding-bottom: 20px;
+        .container
+            margin: 0px auto !important;
+        input
+            &:checked
+                & ~ .nav
+                    color: #fff
+                    left 0
+        label
+            margin-top 20px
+            display block
+        .logo-t, .logo-s
+            display block
+        .nav
+            text-align left
+            background $bg-nav
+            position absolute
+            padding 20px
+            padding-top 80px
+            top -20px
+            left calc(101%)
+            right 0
+            transition all 0.5s ease-in-out
+            a
+                display block
+                margin-right 96px
+            .langs
+                margin-top 10px
+                border-top 1px solid $bg-dark-highlight
+                display inline-block
+                a	
+                    display inline-block
+                    &:first-child
+                        padding-left 0
+                        border-left 0
+
+@media screen and (max-width: 1200px)
+    nav
+        .logo-t, .logo-s
+            display none
+
+@media screen and (max-width: 360px)
+    nav#navigation
+        .logo-t, .logo-s
+            display none

@@ -1,22 +1,24 @@
-section#head.bg-lighter
-  .container
-    a(href="/")
-      img.adex-logo-small(src='/adex/adex-logo-clean.png')
-      img.adex-logo-small-txt(src='/adex/adex-logo-txt.png')
-    h1.heading= __(strings.HEADING)
-    nav
-      ul.textht-left
-        li
-          a(href="")= __("Publishers")
-        li
-          a(href="")= __("Advertisers")
-        li
-          a(href="")= __("AdEx Longue")
-        li
-          a(href="/about")= __("About Us")
-        li
-          a(href="")= __("Blog")
-        li
-          a(href="")= __("Contact")
-
-        include ./langs
+section#head
+  nav#navigation
+    .container
+      input#menu-toggle(type="checkbox")
+      label(for="menu-toggle")
+        span.menu-line
+        span.menu-line
+        span.menu-line
+      a.logo-p(href="/")
+        span.dark
+          img.logo.logo-p(src="/adex/adex-logo-clean.png")
+          img.logo.logo-t(src="/adex/adex-logo-txt.png")
+        span.light
+          img.logo.logo-p(src="/adex/Logo-white-no-text.png")
+          img.logo.logo-t(src="/adex/adex-logo-text-white.png")
+      .nav
+        //- a(href="")= __("Publishers")
+        //- a(href="")= __("Advertisers")
+        //- a(href="")= __("AdEx Longue")
+        a(href="/")= __("Home")
+        a(href="/about")= __("About Us")
+        a(href="")= __("Blog")
+        a(href="")= __("Contact")        
+        //include ./langs

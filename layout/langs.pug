@@ -1,8 +1,3 @@
-- var first = 0
-
-each lng, index in languages
-    li.lang(class=!first++ ? 'first': '')
-        //- a(href=`javascript:window.changeLanguage('${lng}');`)= lng
-        //- a(href= nolangpath.replace(/\/$/, "") + '/' + lng + gurl.search, class= language == lng ? 'selected' : '')= lng
-        a(href= '/' + lng + nolangpath + gurl.search, class= language == lng ? 'selected' : '')= lng
-            
+.langs
+    each lng, index in languages
+        a(href= '/' + lng + nolangpath + gurl.search, class= language == lng ? 'active' : '')= lng
