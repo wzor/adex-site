@@ -1,65 +1,48 @@
-Date.prototype.isValid = function () {
-    return this.getTime() === this.getTime();
-}; 
-
-
-
 $(function() {
-    var timelineItem = $('#timeline [data-timestamp]');
-    setTimelinTasks();
+    var $lines = $('#hLine1, #hLine2');
+    var linesTxt = $lines.map(function() {
+        return $(this).text();
+    }).toArray();
+    var lineP = 0; // Line Pointer
+    var charP = 0; // Character Pointer
+    var writeD = 1;
+    var iterC = 0; // Iteration count
+    var iterD = 10; // Iteration delay
+    $lines.empty();
+    setInterval(function() {
+        iterC--;
+        if(iterC > 0) {
+            return;
+        }
+        iterC = iterD;
+        if(! lineP && !charP) {
+            $lines
+            //.empty()
+            .removeClass('carret').eq(lineP).addClass('carret');
+            iterD = 10;
+        }
+        var $cLine = $lines.eq(lineP)
+        .text(linesTxt[lineP].slice(0, charP));
+        charP += writeD;
+        if(charP < 0 || charP > linesTxt[lineP].length) {
+            charP -= writeD;
+            lineP += writeD; // Line field
+            if(lineP < 0 || lineP >= linesTxt.length) {
+                lineP -= writeD; // Line field
+                iterC = 150; // Wait for 40 cycles
+                iterD = 0;
+                writeD = -writeD;
+                return;
+            }
+            if(writeD > 0) {
+                charP = 0;
+            } else {
+                charP = linesTxt[lineP].length - 1;
+            }
 
-    function setTimelinTasks(){
-        var dateNow = Date.now();
-
-        timelineItem
-            .removeClass('complete')
-            .each(function(){
-                var $this = $(this)
-                // console.log('hoi')
-                var itemDate = new Date($this.data('timestamp'));
-                console.log(itemDate)
-                if(itemDate <= dateNow){
-                    $this.addClass('complete')
-                }
-            })
-    }
+            $cLine.removeClass('carret');
+            $lines.eq(lineP).addClass('carret');
+        }
+    }, 20);
 });
 
-$(function() {
-    var progressBar = $('#token-sale-progress .progress-inner');
-    var raised = $('#token-sale-progress .info .raised');
-    var cap = $('#token-sale-progress .info .cap');
-    var ratio = $('#token-sale-progress .ratio');
-
-    var interval = null;
-
-    function updateSalesStats(stats){
-        var percentSold = (stats.raised / stats.cap) * 100;
-        if(percentSold >= 100) {
-            percentSold = 100;
-
-            clearInterval(interval)
-        }
-        progressBar.css('width', percentSold + '%')
-        raised.html(stats.raised.toFixed(4))
-        cap.html(stats.cap)
-        ratio.html(stats.ratio)
-    }
-
-    function getStats(){
-        var ts = Date.now() + '';
-        
-        $.getJSON( "/api/stats?time=" + ts, function( stats ) {
-            console.log(stats)
-            if(stats){
-                updateSalesStats(stats);
-            }
-        })
-    }
-
-    setTimeout(getStats, 300);    
-
-    var REFRESH_STATS_INTERVAL = 30000; // 30 000 (30 sec)
-
-    // interval = setInterval(getStats, REFRESH_STATS_INTERVAL); 
-})

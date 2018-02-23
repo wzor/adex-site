@@ -395,8 +395,12 @@ ul
                 &.sm
                     font-size 0.8em
             b
-                display block
                 font-weight bold
+            span, b
+                border-right 2px solid transparent
+            .carret
+                padding-right .2em
+                animation blink-caret .5s step-end infinite
         h2
             font-weight 600
             font-size 1.8em
@@ -486,6 +490,12 @@ ul
             &:after
                 background-color $BKG_LIGHTER
                 left -66px
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+}
 
 #features
     h2
