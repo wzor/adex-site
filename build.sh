@@ -8,8 +8,8 @@ cp -rf adex dist
 curl http://localhost:4000/ | gunzip > dist/index.html
 
 
-sed -i -e 's/\/about\/about\/index.html/g' dist/about/index.html
-sed -i -e 's/\/about\/about\/index.html/g' dist/index.html
+sed -i -e 's/\/about/about\/index.html/g' dist/about/index.html
+sed -i -e 's/\/about/about\/index.html/g' dist/index.html
 
 sed -i -e 's/\/scripts.js/scripts.js/g' dist/index.html
 sed -i -e 's/\/scripts.js/scripts.js/g' dist/about/index.html
