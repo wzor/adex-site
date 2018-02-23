@@ -2,35 +2,35 @@
     "partners": [
         {
             "name": "Stremio",
-            "img": "/adex/logo_stremio.png"
+            "img": "/adex/partners/logo_stremio.png"
         },
         {
             "name": "Propy",
-            "img": "/adex/logo_propy.png"
+            "img": "/adex/partners/logo_propy.png"
         },
         {
             "name": "Harbour",
-            "img": "/adex/logo_harbour.png"
+            "img": "/adex/partners/logo_harbour.png"
         },
         {
             "name": "Dexy",
-            "img": "/adex/logo_dexy.png"
+            "img": "/adex/partners/logo_dexy.png"
         },
         {
             "name": "Bitmain",
-            "img": "/adex/bitmain-logo.png"
+            "img": "/adex/partners/bitmain-logo.png"
         },
         {
             "name": "Fintech Blockchain Group",
-            "img": "/adex/fbg-logo.png"
+            "img": "/adex/partners/fbg-logo.png"
         },
         {
             "name": "IAB Tech Lab",
-            "img": "/adex/iab-seal-logo.png"
+            "img": "/adex/partners/iab-seal-logo.png"
         },
         {
             "name": "Wings",
-            "img": "/adex/wings-logo.png"
+            "img": "/adex/partners/wings-logo.png"
         }
     ]
 }
