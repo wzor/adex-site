@@ -1,4 +1,4 @@
-# adex-webiste
+# adex-website
 Official Website of AdEx
 
 ## Built With
