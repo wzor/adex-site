@@ -3,6 +3,7 @@
 mkdir -p dist
 mkdir -p dist/{api,about}
 cp -rf public dist/
+cp -rf images dist/
 cp -rf adex dist
 
 curl http://localhost:4000/ | gunzip > dist/index.html
