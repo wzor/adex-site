@@ -7,7 +7,8 @@ $(function() {
     var charP = 0; // Character Pointer
     var writeD = 1;
     var iterC = 0; // Iteration count
-    var iterD = 10; // Iteration delay
+    var iterT = 5; // Iteration delay
+    var iterD = iterT; // Iteration delay
     $lines.empty();
     setInterval(function() {
         iterC--;
@@ -19,7 +20,7 @@ $(function() {
             $lines
             //.empty()
             .removeClass('carret').eq(lineP).addClass('carret');
-            iterD = 10;
+            iterD = iterT;
         }
         var $cLine = $lines.eq(lineP)
         .text(linesTxt[lineP].slice(0, charP));
@@ -29,7 +30,11 @@ $(function() {
             lineP += writeD; // Line field
             if(lineP < 0 || lineP >= linesTxt.length) {
                 lineP -= writeD; // Line field
-                iterC = 150; // Wait for 40 cycles
+                if(writeD > 0) {
+                    iterC = 200; // Wait after show
+                } else {
+                    iterC = 50; // Wait after erase
+                }
                 iterD = 0;
                 writeD = -writeD;
                 return;
