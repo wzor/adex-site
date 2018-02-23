@@ -188,29 +188,8 @@ ul
         img
             max-width 100%
             max-height 100%
-.bg-default
-    background-color $BKG_DEFAULT
-    color $BKG_DEFAULT_COLOR
-.bg-dark
-    background-color $BKG_DARK
-    color $BKG_DARK_COLOR
-.bg-light
-    background-color $BKG_LIGHT
-    color $BKG_LIGHT_COLOR
-.bg-lighter
-    background-color $BKG_LIGHTER
-    color $BKG_LIGHTER_COLOR
-.bg-default-lighter
-    background $BKG_LIGHTER
-.bg-lighter-default
-    background linear-gradient(to right, $BKG_LIGHTER 0%,$BKG_LIGHTER 50%,$BKG_DEFAULT 50%,$BKG_DEFAULT 100%)
-.bg-dark-default
-    background linear-gradient(to right, $BKG_DARK 0%,$BKG_DARK 50%,$BKG_DEFAULT 50%,$BKG_DEFAULT 100%)
 
 .hero-inner
-    background-color: #1b75bc;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%230e63ab' fill-opacity='0.57'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-    color $BKG_DEFAULT_COLOR;
     font-size 44px
     font-weight 300
 
@@ -300,11 +279,17 @@ ul
 
 
 #hero
-    padding-top: 100px;
-    background-image: url(/adex/hero-background.jpg);
-    background-repeat no-repeat
-    background-position center center
-    background-size cover
+    .links
+        ul
+            li
+                margin-right  20px
+                margin-bottom 20px
+                background-color rgba($BKG_LIGHTER_COLOR, 0.2)
+                &:hover
+                    background-color rgba($BKG_LIGHTER_COLOR, 0.4)
+                a
+                    .icon
+                        opacity 1
     position relative
     overflow hidden
     width 100%
@@ -450,8 +435,6 @@ ul
 
 
 #what-is
-    background-image: url(/adex/About-bgr.jpg);
-    background-size cover
     color white
     font-size 16px
     line-height 26px
@@ -687,18 +670,6 @@ ul
                 margin-right  20px
                 margin-bottom 20px
 
-#hero
-    .links
-        ul
-            li
-                margin-right  20px
-                margin-bottom 20px
-                background-color rgba($BKG_LIGHTER_COLOR, 0.2)
-                &:hover
-                    background-color rgba($BKG_LIGHTER_COLOR, 0.4)
-                a
-                    .icon
-                        opacity 1
 footer
     position relative
     &:after
@@ -972,15 +943,15 @@ nav
                         transform-origin: 100% 0%;
                     &:nth-child(3)
                         transform-origin: 100% 100%;
-    &.background
-        background #fff
-        color #000000
-        .dark
-            display: inline
-        .light
-            display: none
+nav.background, .white-nav + #head nav
+    background #fff
+    color #000000
+    .dark
+        display: inline
+    .light
+        display: none
 
-nav#navigation.background input:not(:checked) + label .menu-line
+nav#navigation.background input:not(:checked) + label .menu-line, .white-nav + #head nav input:not(:checked) + label .menu-line
         background-color: #000
 
 @media screen and (max-width: 895px)
@@ -1031,3 +1002,41 @@ nav#navigation.background input:not(:checked) + label .menu-line
     nav#navigation
         .logo-t, .logo-s
             display none
+
+.nav-offset
+    padding-top 100px
+
+
+// Background definitions
+.bg-default
+    background-color $BKG_DEFAULT
+    color $BKG_DEFAULT_COLOR
+.bg-dark
+    background-color $BKG_DARK
+    color $BKG_DARK_COLOR
+.bg-light
+    background-color $BKG_LIGHT
+    color $BKG_LIGHT_COLOR
+.bg-lighter
+    background-color $BKG_LIGHTER
+    color $BKG_LIGHTER_COLOR
+.bg-white
+    background-color $BKG_DEFAULT_COLOR
+    color $BKG_LIGHTER_COLOR
+.bg-default-lighter
+    background $BKG_LIGHTER
+.bg-lighter-default
+    background linear-gradient(to right, $BKG_LIGHTER 0%,$BKG_LIGHTER 50%,$BKG_DEFAULT 50%,$BKG_DEFAULT 100%)
+.bg-dark-default
+    background linear-gradient(to right, $BKG_DARK 0%,$BKG_DARK 50%,$BKG_DEFAULT 50%,$BKG_DEFAULT 100%)
+
+.bg-tile-x
+    background-color: #1b75bc;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%230e63ab' fill-opacity='0.57'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    color $BKG_DEFAULT_COLOR;
+
+.bg-laptop
+    background-image: url(/adex/hero-background.jpg);
+    background-repeat no-repeat
+    background-position center center
+    background-size cover
