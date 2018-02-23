@@ -1,5 +1,5 @@
 @charset "utf-8";
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,600");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800");
 
 body, .pure-g, .pure-g [class*="pure-u"]
  font-family: 'Open Sans', sans-serif
@@ -22,6 +22,7 @@ $BKG_DEFAULT_COLOR=#fff
 
 $BKG_DARK=#3c3c3b
 $BKG_DARK_COLOR=#fff
+$BKG_DARKER=#272727
 
 $BKG_LIGHT= rgba(#3c3c3b, 0.1)
 $BKG_LIGHT_COLOR= #3c3c3b
@@ -48,7 +49,7 @@ $CONTAINER_VERTICALL_PADDING=60px
 
 
 strong
-    font-weight 900
+    font-weight 700
 
 a
     color inherit
@@ -166,9 +167,9 @@ ul
     .heading
         margin-bottom 30px
     h2
-        opacity 0.5
+        opacity 0.3
         font-size 20px
-        font-weight bold
+        font-weight 800
         text-transform uppercase
 
     .partner
@@ -487,15 +488,22 @@ ul
                 left -66px
 
 #features
+    h2
+        font-size: 44px
+        font-weight: 300
+        margin-bottom: 60px
     .f-row
         margin-top 2em
     strong, span
         line-height 60px
+        font-size 24px
+    span
+        font-weight: 300
     img
         vertical-align middle
         margin-right 1em
         width 60px
-    @media screen and (max-width: 767px)
+    @media screen and (max-width: 1024px)
         .f-row
             margin-top 0
         .f-row > *
@@ -632,9 +640,14 @@ ul
         &:hover
             color white
     .logo
-        max-width 80%
+        max-width 60%
     .bottom-links
         margin-top 1.3em
+    .heading
+        font-size: 44px
+        font-weight: 300
+        opacity .4
+        margin-top: -10px
 
 .links
     ul
@@ -671,8 +684,10 @@ ul
                 margin-right  20px
                 margin-bottom 20px
 
-footer
+#footer
     position relative
+    span
+        font-size: 13px
     &:after
         content ""
         position absolute
@@ -680,7 +695,7 @@ footer
         bottom 0
         left 0
         right 0
-        background-color #4b4b4b
+        background-color #272727
         opacity 0.3
         pointer-events none
     .grid-item
@@ -1008,6 +1023,9 @@ nav#navigation.background input:not(:checked) + label .menu-line, .white-nav + #
 .nav-offset
     padding-top 100px
 
+.bottom-space
+    padding-bottom 120px
+
 .github
     position fixed
     right 0
@@ -1022,6 +1040,9 @@ nav#navigation.background input:not(:checked) + label .menu-line, .white-nav + #
     color $BKG_DEFAULT_COLOR
 .bg-dark
     background-color $BKG_DARK
+    color $BKG_DARK_COLOR
+.bg-darker
+    background-color $BKG_DARKER
     color $BKG_DARK_COLOR
 .bg-light
     background-color $BKG_LIGHT

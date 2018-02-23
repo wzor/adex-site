@@ -18,19 +18,16 @@
         },
         {
             "name": "Bitmain",
-            "img": "/adex/partners/bitmain-logo.png"
+            "img": "/adex/partners/logo-bitmain.png"
         },
         {
             "name": "Fintech Blockchain Group",
-            "img": "/adex/partners/fbg-logo.png"
+            "img": "/adex/partners/logo-fbg.png"
         },
         {
             "name": "IAB Tech Lab",
-            "img": "/adex/partners/iab-seal-logo.png"
-        },
-        {
-            "name": "Wings",
-            "img": "/adex/partners/wings-logo.png"
+            "img": "/adex/partners/logo-iab.png"
         }
+       
     ]
 }

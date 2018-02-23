@@ -14,13 +14,13 @@ section#head
           img.logo.logo-p(src="/adex/Logo-white-no-text.png" alt="Logo")
           img.logo.logo-t(src="/adex/adex-logo-text-white.png" alt="AdEx")
       .nav
-        //- a(href="")= __("Publishers")
-        //- a(href="")= __("Advertisers")
-        //- a(href="")= __("AdEx Longue")
         a(href="/")= __("Home")
+        a(href="http://dapp.adex.network/dashboard/publisher" target="_blank")= __("Publishers")
+        a(href="http://dapp.adex.network/dashboard/advertiser" target="_blank")= __("Advertisers")
+        //- a(href="")= __("AdEx Longue")
         a(href="/about")= __("About Us")
         a(href="https://medium.com/the-adex-blog" target="_blank")= __("Blog")
-        a(href="")= __("Contact")        
+        //- a(href="")= __("Contact")        
         //include ./langs
 a.github(href="https://github.com/AdExBlockchain" target="_blank")
         img(src="/adex/GITHUB-ribbon.png" alt="We are on GitHub")
