@@ -8,4 +8,4 @@ window.changeLanguage = language => {
 		document.write(response)
 		document.close()
 	})
-}
+};
