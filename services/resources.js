@@ -18,11 +18,12 @@ app.get("/res.css", function(req, res, next) {
 		}
 
 		files = files
-			.filter(function(fname) { return fname.match(".png$") });
+			.filter(function(fname) { return fname.match(".png$") })
+			.sort()
 
 		var lines = [], stylesheet;
 
-		async.each(files, function(fname, cb) {
+		async.eachSeries(files, function(fname, cb) {
 			var className = fname.split(".").slice(0,-1).join(".");
 			fs.readFile(path.join(RES_DIR, fname), function(err, buf) {
 				if (err) return cb(err);
