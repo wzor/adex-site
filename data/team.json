@@ -407,30 +407,6 @@
                     "link": "https://www.linkedin.com/in/shuojizhou/"
                 }
             ]
-        },
-        {
-            "name": { 
-                "en": "Richard Titus",
-                "cn": "",
-                "ru": ""
-            },
-            "position": { 
-                "en": "Strategy Advisor",
-                "cn": "",
-                "ru": ""
-            },
-            "img": "adex/photo-richard-titus.jpeg",
-            "description": { 
-                "en": "Richard is a serial entrepreneur with a passion for the Internet, technology and media. A longtime holder of crypto, he has been acting as strategic advisor to a number of blockchain projects, including po.et, HIVE, and now AdEx.",
-                "cn":"",
-                "ru": ""
-            },
-            "links": [
-                {
-                    "icon": "icon-adex-linkedin",
-                    "link": "https://www.linkedin.com/in/rxdxt/"
-                }
-            ]
         }
     ]
 }
