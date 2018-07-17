@@ -27,7 +27,10 @@
         {
             "name": "IAB Tech Lab",
             "img": "adex/partners/logo-iab.png"
+        },
+        {
+            "name": "FLOGmall",
+            "img": "adex/partners/flogmall_logo.png"
         }
-       
     ]
 }
