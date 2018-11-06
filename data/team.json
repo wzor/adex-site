@@ -170,30 +170,6 @@
         },
         {
             "name": { 
-                "en": "Jihan Wu",
-                "cn": "吴忌寒",
-                "ru": "Джихан Ву"
-            },
-            "position": { 
-                "en": "STRATEGY ADVISOR",
-                "cn": "战略顾问",
-                "ru": "КОНСУЛЬТАНТ ПО СТРАТЕГИИ"
-            },
-            "img": "adex/photo-jihan-wu.png",
-            "description": { 
-                "en": "Jihan is one of the founders of BITMAIN Technologies, one of the most recognized and valuable bitcoin mining hardware provider. Wu is a supporter of Bitcoin Unlimited, a solution to solve bitcoin’s scalability issue.",
-                "cn":"吴忌寒是BITMAIN Technologies的创始人之一，BITMAIN Technologies是最知名和最有价值的比特币矿业硬件供应商之一。 Bitcoin Unlimited是解决比特币可扩展性问题的解决方案，而吴忌寒是这一方案的支持者。",
-                "ru": "Джихан –– один из основателей BITMAIN Technologies, одного из наиболее известных и высоко оцененных производителей аппаратного обеспечения для майнинга биткоина. Ву поддерживает Bitcoin Unlimited, решение, призванное разрешить проблемы с масштабированием биткоина."
-            },
-            "links": [
-                {
-                    "icon": "icon-adex-linkedin",
-                    "link": "https://www.linkedin.com/in/wu-jihan-31972417/"
-                }
-            ]
-        },
-        {
-            "name": { 
                 "en": "Stas Oskin",
                 "cn": "Stas Oskin",
                 "ru": "Стас Оскин"
