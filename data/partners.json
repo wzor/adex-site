@@ -13,8 +13,12 @@
             "img": "adex/partners/logo_harbour.png"
         },
         {
-            "name": "Dexy",
-            "img": "adex/partners/logo_dexy.png"
+            "name": "Trust Wallet",
+            "img": "adex/partners/logo_trustwallet.png"
+        },
+        {	
+            "name": "Bitmain",	
+            "img": "adex/partners/logo-bitmain.png"	
         },
         {
             "name": "Fintech Blockchain Group",
