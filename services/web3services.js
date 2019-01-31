@@ -15,7 +15,7 @@ const adxFund = '0xf83f7411046ce4a6fba6584b868fb15d45f0065a'
 const adxAbi = require('./../data/adex-abi')
 
 var cachedTransferable = null;
-const LAST_TRANSFERRABLE = 56355171;
+const LAST_TRANSFERRABLE = 93689191;
 const CACHE_INTERVAL = 2 * 60 * 60 * 1000 // 2 hours
 var lastCached = null
 
@@ -23,10 +23,7 @@ function getTransferable() {
 
     return new Promise(function (resolve, reject) {
 
-        // TEMP use of last transferrable
-        return resolve(LAST_TRANSFERRABLE)
 
-        /*
         if (cachedTransferable && lastCached && (Date.now() - lastCached) < CACHE_INTERVAL) {
             return resolve(cachedTransferable);
         }
@@ -82,7 +79,6 @@ function getTransferable() {
             console.log('Transferrable error -> ', err)
             return resolve(LAST_TRANSFERRABLE);
         }
-        */
     });
 }
 
