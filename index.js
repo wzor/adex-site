@@ -7,7 +7,8 @@ const locale = require('locale')
 const bodyParser = require('body-parser')
 const url = require('url')
 const langRegex = new RegExp('^\\/+(' + require('./config.json').languages.join('|') + ')\\/*')
-
+const oldWihitepaperPathRegEx = /adex\/AdEx-Whitepaper/i
+const whitepaperURL = 'https://github.com/adexnetwork/adex-protocol'
 
 app.use((request, response, next) => {
 	var hours = url.parse(request.url).pathname.match(/jpg$|png|mp4$/) ? 24 * 24 : 12;
@@ -113,6 +114,16 @@ app.rewrite((request, response) => {
 	}
 
 	request.language = language;
+})
+
+app.rewrite((request, response) => {
+	var path = url.parse(request.url, true).path
+	let oldWPMatch = path.match(oldWihitepaperPathRegEx)
+	if (oldWPMatch && oldWPMatch[0]) {
+		response.redirect(whitepaperURL)
+
+		return true
+	}
 })
 
 require('./services/resources')
