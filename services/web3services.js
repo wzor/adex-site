@@ -15,7 +15,8 @@ const adxFund = '0xf83f7411046ce4a6fba6584b868fb15d45f0065a'
 const adxAbi = require('./../data/adex-abi')
 
 var cachedTransferable = null;
-const LAST_TRANSFERRABLE = 56355171;
+
+const LAST_TRANSFERRABLE = 93689191;
 const CACHE_INTERVAL = 2 * 60 * 60 * 1000 // 2 hours
 var lastCached = null
 
