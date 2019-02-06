@@ -6,6 +6,7 @@ const tokenSaleStats = {
 
 const staticData = {
     team:  require('./../../data/team.json'),
+    earlyStageAdvisors: require('./../../data/early-stage-advisors.json'),
     partners: require('./../../data/partners.json'),
     stats: tokenSaleStats    
 }

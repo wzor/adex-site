@@ -7,7 +7,7 @@
                 "ru": "Иво Георгиев"
             },
             "position": {
-                "en": "CO-FOUNDER",
+                "en": "CEO",
                 "cn": "联合创始人",
                 "ru": "СОУЧРЕДИТЕЛЬ"
             },
@@ -19,8 +19,12 @@
             },
             "links": [
                 {
-                    "icon": "icon-adex-linkedin",
-                    "link": "https://www.linkedin.com/in/ivo-georgiev-8298b678/"
+                    "icon": "icon-adex-github",
+                    "link": "https://github.com/Ivshti"
+                },
+                {
+                    "icon": "icon-adex-twitter",
+                    "link": "https://twitter.com/Ivshti"
                 }
             ]
         },
@@ -31,7 +35,7 @@
                 "ru": "Димо Стоянов"
             },
             "position": {
-                "en": "CO-FOUNDER",
+                "en": "COO",
                 "cn": "联合创始人",
                 "ru": "СОУЧРЕДИТЕЛЬ"
             },
@@ -55,7 +59,7 @@
                 "ru": "Ванина Иванова"
             },
             "position": {
-                "en": "MARKETING & AD TECH",
+                "en": "CMO",
                 "cn": "营销与公关技术",
                 "ru": "МАРКЕТИНГ И <br/>РЕКЛАМНЫЕ ТЕХНОЛОГИИ"
             },
@@ -98,36 +102,12 @@
         },
         {
             "name": {
-                "en": "Alexandru Branza",
-                "cn": "Alexandru Branza",
-                "ru": "Александру Бранза"
-            },
-            "position": {
-                "en": "DEVELOPER",
-                "cn": "开发人员",
-                "ru": "РАЗРАБОТЧИК"
-            },
-            "img": "adex/photo-alexandru-branza.jpg",
-            "description": {
-                "en": "Alexandru is a software / web developer with more then 8 years of experience specializing in: video players, p2p, blockchains and web services. A strong believer and contributor to open source communities and part of the Stremio Team.",
-                "cn": "Alexandru是软件／网页开发者，在视频播放、p2p、区块链和网站服务方面有着超过8年的经验。他是开源社区的坚定信仰者和贡献者，亦是Stremio团队的成员。",
-                "ru": "Александру –– разработчик ПО и веб-решений с более чем восьмилетним опытом. Он специализируется на видеоплеерах, p2p, блокчейне и веб-сервисах. Приверженец и участник опенсорс-сообществ. Работает в команде Stremio."
-            },
-            "links": [
-                {
-                    "icon": "icon-adex-github",
-                    "link": "https://github.com/jaruba"
-                }
-            ]
-        },
-        {
-            "name": {
                 "en": "Ivo Paunov",
                 "cn": "Ivo Paunov",
                 "ru": "Иво Паунов"
             },
             "position": {
-                "en": "DEVELOPER",
+                "en": "CORE DEVELOPER",
                 "cn": "开发人员",
                 "ru": "РАЗРАБОТЧИК"
             },
@@ -146,12 +126,60 @@
         },
         {
             "name": {
+                "en": "Samuel Omidiora",
+                "cn": "Samuel Omidiora",
+                "ru": ""
+            },
+            "position": {
+                "en": "SYSTEMS DEVELOPER",
+                "cn": "",
+                "ru": ""
+            },
+            "img": "adex/photo-samuel-omidiora.png",
+            "description": {
+                "en": "Samuel is ..",
+                "cn": "",
+                "ru": ""
+            },
+            "links": [
+                {
+                    "icon": "icon-adex-github",
+                    "link": "https://github.com/samparsky"
+                }
+            ]
+        },
+        {
+            "name": {
+                "en": "Simeon Nakov",
+                "cn": "Simeon Nakov",
+                "ru": ""
+            },
+            "position": {
+                "en": "BACKEND DEVELOPER",
+                "cn": "",
+                "ru": ""
+            },
+            "img": "adex/photo-simeon-nakov.png",
+            "description": {
+                "en": "Simeon is",
+                "cn": "",
+                "ru": ""
+            },
+            "links": [
+                {
+                    "icon": "icon-adex-github",
+                    "link": "https://github.com/simzzz"
+                }
+            ]
+        },
+        {
+            "name": {
                 "en": "Allesya Ivanova",
                 "cn": "Allesya Ivanova",
                 "ru": "Алеся Иванова"
             },
             "position": {
-                "en": "GRAPHIC DESIGNER",
+                "en": "BRAND DESIGNER",
                 "cn": "平面设计师",
                 "ru": "ГРАФИЧЕСКИЙ ДИЗАЙНЕР"
             },
@@ -218,54 +246,6 @@
         },
         {
             "name": {
-                "en": "Jihan Wu",
-                "cn": "吴忌寒",
-                "ru": "Джихан Ву"
-            },
-            "position": {
-                "en": "STRATEGY ADVISOR",
-                "cn": "战略顾问",
-                "ru": "КОНСУЛЬТАНТ ПО СТРАТЕГИИ"
-            },
-            "img": "adex/photo-jihan-wu.png",
-            "description": {
-                "en": "Jihan is one of the founders of BITMAIN Technologies, one of the most recognized and valuable bitcoin mining hardware provider. Wu is a supporter of Bitcoin Unlimited, a solution to solve bitcoin’s scalability issue.",
-                "cn": "吴忌寒是BITMAIN Technologies的创始人之一，BITMAIN Technologies是最知名和最有价值的比特币矿业硬件供应商之一。 Bitcoin Unlimited是解决比特币可扩展性问题的解决方案，而吴忌寒是这一方案的支持者。",
-                "ru": "Джихан –– один из основателей BITMAIN Technologies, одного из наиболее известных и высоко оцененных производителей аппаратного обеспечения для майнинга биткоина. Ву поддерживает Bitcoin Unlimited, решение, призванное разрешить проблемы с масштабированием биткоина."
-            },
-            "links": [
-                {
-                    "icon": "icon-adex-linkedin",
-                    "link": "https://www.linkedin.com/in/wu-jihan-31972417/"
-                }
-            ]
-        },
-        {
-            "name": {
-                "en": "Stas Oskin",
-                "cn": "Stas Oskin",
-                "ru": "Стас Оскин"
-            },
-            "position": {
-                "en": "TECH ADVISOR",
-                "cn": "技术顾问",
-                "ru": "ТЕХНИЧЕСКИЙ КОНСУЛЬТАНТ"
-            },
-            "img": "adex/photo-stas-oskin.png",
-            "description": {
-                "en": "Stas has over 10 years of experience in engineering, development and management of software, cloud, healthcare, cryptocurrency, social products and services. He is an entrepreneur, crypto-enthusiast and a life hacker.",
-                "cn": "Stas在软件、云端、医疗保健、加密数字货币、社会产品和服务的工程、开发和管理方面拥有超过10年的经验。他是企业家、密码学爱好者和真实的黑客。",
-                "ru": "У Стаса более 10 лет опыта в разработке, управлении и подготовке ПО, облачных сервисов, криптовалютных проектов, а также продуктов и услуг в области здравоохранения и социальных программ. Он предприниматель, криптоэнтузиаст и лайфхакер."
-            },
-            "links": [
-                {
-                    "icon": "icon-adex-linkedin",
-                    "link": "https://www.linkedin.com/in/stasoskin/"
-                }
-            ]
-        },
-        {
-            "name": {
                 "en": "Sebastian Stupurac",
                 "cn": "Sebastian Stupurac",
                 "ru": "Себастьян Штупурач"
@@ -285,174 +265,6 @@
                 {
                     "icon": "icon-adex-linkedin",
                     "link": "https://www.linkedin.com/in/sebastian-stupurac-6bbb1712/"
-                }
-            ]
-        },
-        {
-            "name": {
-                "en": "Lior Zysman",
-                "cn": "Lior Zysman",
-                "ru": "Лиор Зайсман"
-            },
-            "position": {
-                "en": "LEGAL ADVISOR",
-                "cn": "法律顾问",
-                "ru": "ЮРИДИЧЕСКИЙ КОНСУЛЬТАНТ"
-            },
-            "img": "adex/photo-lior-zysman.png",
-            "description": {
-                "en": "Lior is a corporate lawyer advising startups and investors on crowdfunding and cryptocurrencies, and working on decentralized autonomous non-profit organizations (Runner-up at Consensus 2016 Hackathon with a Charity DAO).",
-                "cn": "Lior是一名企业律师，为初创公司和投资者提供大众化和加密数字货币咨询服务，并从事去中心化自治非营利组织（并凭借慈善DAO在2016年共识黑客马拉松获得亚军）。",
-                "ru": "Лиор –– корпоративный юрист, консультирующий стартапы и инвесторов по вопросам краудфандинга и криптовалют, и работающий на децентрализованные автономные НКО (занял второе место на Consensus 2016 Hackathon с проектом Charity DAO)."
-            },
-            "links": [
-                {
-                    "icon": "icon-adex-linkedin",
-                    "link": "https://www.linkedin.com/in/lior-zysman-2977963/"
-                }
-            ]
-        },
-        {
-            "name": {
-                "en": "Georgi Matev",
-                "cn": "Georgi Matev",
-                "ru": "Георги Матев"
-            },
-            "position": {
-                "en": "LEGAL ADVISOR",
-                "cn": "法律顾问",
-                "ru": "ЮРИДИЧЕСКИЙ КОНСУЛЬТАНТ"
-            },
-            "img": "adex/photo-georgi-matev.jpg",
-            "description": {
-                "en": "Attorney at Law with substantial experience in the field of civil law especially ICT and corporate law. Extensive competence in VC funding and transactions. Georgi is passionate about blockchain technologies and the legal aspects and regulation framework accordingly.",
-                "cn": "",
-                "ru": ""
-            },
-            "links": [
-                {
-                    "icon": "icon-adex-linkedin",
-                    "link": "https://www.linkedin.com/in/georgi-matev-41803411/"
-                }
-            ]
-        },
-        {
-            "name": {
-                "en": "Guy Corem",
-                "cn": "Guy Corem",
-                "ru": "Гай Корем"
-            },
-            "position": {
-                "en": "STRATEGY ADVISOR",
-                "cn": "战略顾问",
-                "ru": "КОНСУЛЬТАНТ ПО СТРАТЕГИИ"
-            },
-            "img": "adex/photo-guy-corem.png",
-            "description": {
-                "en": "Guy has a versatile professional experience - he has worked for major companies like Intel, Boxee and Voltaire. Along with that, he has background in funding startups, cybersecurity and cryptocurrencies/bitcoin.",
-                "cn": "Guy拥有多样的专业经验——曾在英特尔、Boxee和Voltaire等大型公司工作。与此同时，他有着资助创业公司、网络安全和加密数字货币/比特币的背景。",
-                "ru": "У Гая разносторонний профессиональный опыт: он работал на такие крупные компании, как Intel, Boxee и Voltaire. При этом у него есть опыт в области финансирования стартапов, кибербезопасности и криптовалют."
-            },
-            "links": [
-                {
-                    "icon": "icon-adex-linkedin",
-                    "link": "https://www.linkedin.com/in/vcorem/"
-                }
-            ]
-        },
-        {
-            "name": {
-                "en": "Dominik Zynis",
-                "cn": "Dominik Zynis",
-                "ru": "Доминик Зайнис"
-            },
-            "position": {
-                "en": "MARKETING ADVISOR",
-                "cn": "营销顾问",
-                "ru": "МАРКЕТИНГ-КОНСУЛЬТАНТ"
-            },
-            "img": "adex/photo-dominik-zynis.png",
-            "description": {
-                "en": "Dominik has been involved in the cryptocurrency scene since 2012. His background includes top sales rep for Oracle Corp., cofounder of State Software known for discovering JSON, and Head of Comm's & Bizdev at Mastercoin (Omni) Foundation. He leads PR and comm's at WINGS Foundation.",
-                "cn": "Dominik自2012年以来就一直参与到加密数字货币领域中。他的背景包括是甲骨文公司的顶尖销售代表、美国国家软件检验JSON的联合创始人，以及Mastercoin（Omni）基金会的社区和商务拓展总监。他在WINGS基金会领导公关和社区工作。",
-                "ru": "Доминик занимается криптовалютами с 2012 года. Ранее он работал главным менеджером по продажам в Oracle Corp., также был соучредителем State Software (компании, создавшей JSON), и начальником отдела развития и связей в Mastercoin (Omni) Foundation. Сейчас он возглавляет отдел PR и связей в WINGS Foundation."
-            },
-            "links": [
-                {
-                    "icon": "icon-adex-linkedin",
-                    "link": "https://www.linkedin.com/in/everforgetmenot/"
-                }
-            ]
-        },
-        {
-            "name": {
-                "en": "Nikola Stojanow",
-                "cn": "Nikola Stojanow",
-                "ru": "Никола Стоянов"
-            },
-            "position": {
-                "en": "BIZDEV ADVISOR",
-                "cn": "商务拓展顾问",
-                "ru": "КОНСУЛЬТАНТ ПО РАЗВИТИЮ"
-            },
-            "img": "adex/photo-nikola-stojanov.png",
-            "description": {
-                "en": "Nikola is a Business Development executive with experience in Germany, Eastern Europe, MENA and Asia Pacific. During the past 10 years, he has developed and consulted a number of international projects, including the Aeternity blockchain platform.",
-                "cn": "Nikola是一位在德国、东欧、中东和北非地区拥有丰富经验的商务拓展主管。十多年来，他先后推进了一批国际性项目并提供咨询服务，其中包括Aeternity区块链平台。",
-                "ru": "Никола –– специалист по развитию бизнеса, работавший в Германии, Восточной Европе, Ближнем Востоке и Северной Африке, а также Азиатско-Тихоокеанском регионе. За последние 10 лет он участвовал в разработке или был консультантом во множестве международных проектов, включая блокчейн-платформу Aeternity."
-            },
-            "links": [
-                {
-                    "icon": "icon-adex-linkedin",
-                    "link": "https://www.linkedin.com/in/nikola-stojanow-46478518"
-                }
-            ]
-        },
-        {
-            "name": {
-                "en": "Vladislav Dramaliev",
-                "cn": "Vladislav Dramaliev",
-                "ru": "Владислав Драмалиев"
-            },
-            "position": {
-                "en": "COMMUNITY ADVISOR",
-                "cn": "社区顾问",
-                "ru": "КОММЬЮНИТИ-КОНСУЛЬТАНТ"
-            },
-            "img": "adex/photo-vlad-dramaliev.png",
-            "description": {
-                "en": "Vladislav is a digital marketing analyst & Bitcoin entrepreneur. He is the founder of BitHope.org, CryptoCrowd.org and the Bitcoin/Blockchain meetup in Sofia, Bulgaria. Vladislav is also co-founder of the Bulgarian Bitcoin Association.",
-                "cn": "Vladislav是数字营销分析师和比特币企业家。他是BitHope.org、CryptoCrowd.org和保加利亚索非亚的比特币/区块链聚会的创始人。Vladislav也是保加利亚比特币协会的联合创始人。",
-                "ru": "Владислав –– аналитик цифрового маркетинга и биткоин-предприниматель. Он основал BitHope.org, CryptoCrowd.org и митап Bitcoin/Blockchain в Софии (Болгария). Владислав также является одним из основателей Биткоин-Ассоциации Болгарии."
-            },
-            "links": [
-                {
-                    "icon": "icon-adex-linkedin",
-                    "link": "https://www.linkedin.com/in/dramaliev/"
-                }
-            ]
-        },
-        {
-            "name": {
-                "en": "Vincent Zhou",
-                "cn": "Vincent Zhou",
-                "ru": "Винсент Чжоу"
-            },
-            "position": {
-                "en": "Strategy Advisor - China",
-                "cn": "",
-                "ru": "Стратегический консультант (Китай)"
-            },
-            "img": "adex/photo-vincent-zhou.png",
-            "description": {
-                "en": "Vincent is the general manager and founding partner of Fintech Blockchain Group. He has a successful career in high tech and blockchain companies, and is considered to be one of the most influential blockchain venture capitalists in China.",
-                "cn": "",
-                "ru": "Винсент -- руководитель и один из основателей Fintech Blockchain Group. Имеет успешный опыт работы в хайтек и блокчейн-компаниях, и считается одним из наиболее влиятельных венчурных инвесторов в блокчейн-индустрии Китая."
-            },
-            "links": [
-                {
-                    "icon": "icon-adex-linkedin",
-                    "link": "https://www.linkedin.com/in/shuojizhou/"
                 }
             ]
         }
