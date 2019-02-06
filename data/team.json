@@ -267,6 +267,30 @@
                     "link": "https://www.linkedin.com/in/sebastian-stupurac-6bbb1712/"
                 }
             ]
+        },
+        {
+            "name": {
+                "en": "Georgi Matev",
+                "cn": "Georgi Matev",
+                "ru": "Георги Матев"
+            },
+            "position": {
+                "en": "LEGAL ADVISOR",
+                "cn": "法律顾问",
+                "ru": "ЮРИДИЧЕСКИЙ КОНСУЛЬТАНТ"
+            },
+            "img": "adex/photo-georgi-matev.jpg",
+            "description": {
+                "en": "Attorney at Law with substantial experience in the field of civil law especially ICT and corporate law. Extensive competence in VC funding and transactions. Georgi is passionate about blockchain technologies and the legal aspects and regulation framework accordingly.",
+                "cn": "",
+                "ru": ""
+            },
+            "links": [
+                {
+                    "icon": "icon-adex-linkedin",
+                    "link": "https://www.linkedin.com/in/georgi-matev-41803411/"
+                }
+            ]
         }
     ]
 }

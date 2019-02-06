@@ -98,6 +98,7 @@ ul
     padding 20px 50px
     display inline-block
     cursor pointer
+    text-transform uppercase
     &:hover
         opacity 1
     &.participate
@@ -106,6 +107,9 @@ ul
         font-weight 600
         margin-bottom 20px
         font-size 2em
+    &.blue
+        color #fff !important
+        background-color $BKG_LIGHT_COLOR_HIGHLIGHT
 
 .big-button
     text-transform uppercase
@@ -121,8 +125,6 @@ ul
         background-color $BKG_LIGHT_COLOR_HIGHLIGHT
     &.green
         background-color $HIGHLIGHT_GREEN
-
-
 
 .inset
     padding 0em 2em
@@ -547,7 +549,7 @@ ul
         display block
         margin-bottom 25px
         img
-            width 80px
+            width 100px
             display inline-block
             margin-right 25px
             vertical-align top
@@ -567,9 +569,10 @@ ul
             letter-spacing 0.1em
         .member-links
             ul
+                margin-top 40px
                 padding 0
                 list-style-type none
-                max-width 137px
+                max-width 117px
                 margin-bottom 0
                 li
                     display inline-block
