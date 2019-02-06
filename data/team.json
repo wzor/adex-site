@@ -119,8 +119,8 @@
             },
             "links": [
                 {
-                    "icon": "icon-adex-github",
-                    "link": "https://github.com/IvoPaunov"
+                    "icon": "icon-adex-linkedin",
+                    "link": "https://www.linkedin.com/in/ivo-paunov-884260103/"
                 }
             ]
         },
@@ -135,9 +135,9 @@
                 "cn": "",
                 "ru": ""
             },
-            "img": "adex/photo-samuel-omidiora.png",
+            "img": "adex/photo-samuel-omidiora.jpeg",
             "description": {
-                "en": "Samuel is ..",
+                "en": "Samuel is Full Stack Software Engineer Interested in Distributed Systems, Blockchain and Cryptocurrencies",
                 "cn": "",
                 "ru": ""
             },
@@ -159,9 +159,9 @@
                 "cn": "",
                 "ru": ""
             },
-            "img": "adex/photo-simeon-nakov.png",
+            "img": "adex/photo-simeon-nakov.jpeg",
             "description": {
-                "en": "Simeon is",
+                "en": "Simeon is a software developer with experience in web development and works mainly with JavaScript/node.js. He is currently focused on the development of AdEx",
                 "cn": "",
                 "ru": ""
             },
