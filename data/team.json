@@ -198,6 +198,54 @@
         },
         {
             "name": {
+                "en": "Dylan Dewdney",
+                "cn": "",
+                "ru": ""
+            },
+            "position": {
+                "en": "BUSINESS DEVELOPER",
+                "cn": "",
+                "ru": ""
+            },
+            "img": "adex/photo-dylan-dewdeny.jpeg",
+            "description": {
+                "en": "A prescient and accurate analyst of market behavior, social psychology, and overall societal trends. Dylan has an abiding interest in cryptography, the blockchain, and decentralized systems from 2011.",
+                "cn": "",
+                "ru": ""
+            },
+            "links": [
+                {
+                    "icon": "icon-adex-linkedin",
+                    "link": "https://www.linkedin.com/in/dylan-dewdney-b9b91442/"
+                }
+            ]
+        },
+        {
+            "name": {
+                "en": "Ivan Manchev",
+                "cn": "",
+                "ru": ""
+            },
+            "position": {
+                "en": "COMMUNICATION SPECIALIST",
+                "cn": "",
+                "ru": ""
+            },
+            "img": "adex/photo-ivan-manchev.jpg",
+            "description": {
+                "en": "Ivan is data-driven creative generalist, experienced and passionate about advertising, online marketing, product management, social media, branding, PR and strategy.",
+                "cn": "",
+                "ru": ""
+            },
+            "links": [
+                {
+                    "icon": "icon-adex-linkedin",
+                    "link": "https://www.linkedin.com/in/ivanmanchev/"
+                }
+            ]
+        },
+        {
+            "name": {
                 "en": "Ameen Soleimani",
                 "cn": "",
                 "ru": ""
