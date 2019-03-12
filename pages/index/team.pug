@@ -19,7 +19,7 @@ section#team.text-center
                   ul
                     each link in member.links
                       li
-                        a(href=link.link, target="_blank")
+                        a(href=link.link, target="_blank" rel="noopener noreferrer")
                           .icon(class=link.icon)
             .description= __(member.description)
 
@@ -28,5 +28,4 @@ section.text-center
     .pure-u-1
         .pure-g.heading
           .pure-u-1
-            h2
-              a(href="/early-stage-advisors")= __("Early stage advisors")
+              a.button.blue(href="/early-stage-advisors")= __("Early stage advisors")
